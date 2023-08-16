@@ -1,0 +1,118 @@
+.slider1 {
+    background-image: url('../assets/images/banner/slide-bg.jpg');
+    background-position: center;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    visibility: inherit;
+    opacity: 1;
+}
+.videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .videoBackground {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+.slider2 {
+    background-image: url('../assets/images/banner/slider1.jpg');
+    background-position: center;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    visibility: inherit;
+    opacity: 1;
+}
+
+.slider3 {
+    background-image: url('../assets/images/banner/slider13.jpg');
+    background-position: center;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    visibility: inherit;
+    opacity: 1;
+}
+
+.commonSlider p {
+    line-height: 55px;
+    border-width: 0px;
+    padding: 1px 40px 0px;
+    letter-spacing: 0px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.commonSlider h6 {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding: 1px 170px 0px;
+    font-weight: bold;
+}
+.see_roombtn{
+    display: flex;
+    justify-content: end;
+    padding: 20px 320px 0px;
+}
+.see_roombtn button{
+    background-color: #e331bf;
+    border-color: #b90a96;
+    text-shadow: 0 -1px 0 #c026a1;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+/* .slider1:before {
+   content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25, 0.6);
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    pointer-events: none;
+} */
+@media (max-width: 768px) {
+    .commonSlider p {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .commonSlider h6 {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        padding: 1px 4px 0px;
+    }
+    .see_roombtn{
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px 0px;
+    }
+ 
+}

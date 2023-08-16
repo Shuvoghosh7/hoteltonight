@@ -1,25 +1,12 @@
 import RootLayout from "@/components/Layouts/RootLayout";
+import Banner from "@/components/UI/Banner";
 
 
 
 export default function Home() {
   return (
     <div >
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
-     homepage
+     <Banner/>
      
     </div>
   )
