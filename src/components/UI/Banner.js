@@ -22,26 +22,28 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import styles from "@/styles/Banner.module.css";
+
 import Link from 'next/link';
 const Banner = () => {
     return (
         <div>
             <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-                delay: 5500,
-                disableOnInteraction: false,
-            }}
-            pagination={{
-                clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper"
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 5500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
             >
+               
                 <SwiperSlide className={`${styles.slider1} ${styles.commonSlider}`}>
-                    
+              
                     <p>
                         <span className='lg-mr-5 mr-2'>
                             <FontAwesomeIcon icon={faStar} />
@@ -70,7 +72,7 @@ const Banner = () => {
                         </button>
                     </div>
                 </SwiperSlide>
-                {/* <SwiperSlide className={`${styles.slider2} ${styles.commonSlider}`}>
+                <SwiperSlide className={`${styles.slider2} ${styles.commonSlider}`}>
                 <p>
                         <span className='lg-mr-5 mr-2'>
                             <FontAwesomeIcon icon={faStar} />
@@ -127,7 +129,7 @@ const Banner = () => {
                             </Link>
                         </button>
                     </div>
-                </SwiperSlide> */}
+                </SwiperSlide>
             </Swiper>
         </div>
     )

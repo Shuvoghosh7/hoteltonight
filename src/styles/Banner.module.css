@@ -1,5 +1,7 @@
-.slider1 {
-    background-image: url('../assets/images/banner/slide-bg.jpg');
+
+.slider1{
+    /* background-image: url('../assets/images/banner/video2.mp4'); */
+    background: url('../assets/images/banner/slide-bg.jpg');
     background-position: center;
     height: 500px;
     background-color: rgba(0, 0, 0, 0);
