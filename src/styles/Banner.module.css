@@ -1,5 +1,4 @@
-
-.slider1{
+.slider1 {
     /* background-image: url('../assets/images/banner/video2.mp4'); */
     background: url('../assets/images/banner/slide-bg.jpg');
     background-position: center;
@@ -11,6 +10,7 @@
     visibility: inherit;
     opacity: 1;
 }
+
 .videoContainer {
     position: absolute;
     top: 0;
@@ -19,13 +19,13 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
-  }
-  
-  .videoBackground {
+}
+
+.videoBackground {
     object-fit: cover;
     width: 100%;
     height: 100%;
-  }
+}
 
 .slider2 {
     background-image: url('../assets/images/banner/slider1.jpg');
@@ -72,12 +72,14 @@
     padding: 1px 170px 0px;
     font-weight: bold;
 }
-.see_roombtn{
+
+.see_roombtn {
     display: flex;
     justify-content: end;
     padding: 20px 320px 0px;
 }
-.see_roombtn button{
+
+.see_roombtn button {
     background-color: #e331bf;
     border-color: #b90a96;
     text-shadow: 0 -1px 0 #c026a1;
@@ -98,6 +100,92 @@
     z-index: 1;
     pointer-events: none;
 } */
+
+.check_availability {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0.85;
+    width: 100%;
+    z-index: 1000;
+    height: 130px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row h2{
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Montserrat';
+    position: relative;
+    padding-left: 70px;
+    line-height: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.row span{
+    color: #fd7e14;
+}
+
+.availability_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.awe_calendar_wrapper label {
+    color: #fd7e14;
+    font-weight: bold;
+}
+
+.awe_calendar_wrapper .awe_calendar {
+    padding: 0 10px 0 5px;
+    background-color: transparent;
+    width: 150px;
+    border: 2px solid #fff;
+    height: 35px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.awe_member {
+    padding: 0 10px 0 5px;
+    background-color: transparent;
+    width: 73px;
+    border: 2px solid #fff;
+    height: 35px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.awe_calendar option {
+    color: black;
+}
+
+.awe_calendar:focus {
+    outline: none;
+}
+.awe_member:focus {
+    outline: none;
+}
+
+.book_btn {
+    color: #fff;
+    background: #fd7e14;
+    text-shadow: 0 -1px 0 #50878e;
+    padding: 4px 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
     .commonSlider p {
         font-size: 12px;
@@ -111,10 +199,31 @@
         justify-content: center;
         padding: 1px 4px 0px;
     }
-    .see_roombtn{
+
+    .see_roombtn {
         display: flex;
         justify-content: center;
         padding: 20px 10px 0px;
     }
- 
+    .check_availability {
+        height: 100%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .availability_form {
+        display: flex;
+        flex-direction: column;    
+    }
+    .awe_member {
+        width: 200px;
+    }
+    .book_btn {
+      margin-bottom: 20px;
+    }
+    .awe_calendar_wrapper .awe_calendar {
+        width: 200px;
+    }
+
 }
