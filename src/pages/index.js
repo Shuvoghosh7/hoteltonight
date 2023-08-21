@@ -8,7 +8,7 @@ import PhotoGrally from "@/components/UI/PhotoGrallry";
 export default function Home() {
   return (
     <div >
-      {/* <Banner/> */}
+      <Banner/>
       <div className="mt-12 mx-16">
         <FavoriteRooms/>
       </div>
