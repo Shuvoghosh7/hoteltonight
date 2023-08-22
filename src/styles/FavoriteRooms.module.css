@@ -6,6 +6,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .froom_title h2{
 
@@ -68,18 +69,59 @@
     color: white;
     padding: 0px;
     box-sizing: border-box;
-    transition: height 0.4s ease-in-out; 
+    transition: height 0.4s ease-in-out;
 
 }
 .content p{
     padding: 20px;
+    font-size: 16px;
+    
 }
 
 .content span{
-    color: #75c5cf !important
+    color: #75c5cf !important;
+    margin-right: 8px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
 .room_thumb:hover .hoverMask {
     height: 100%;
+}
+.btn_block{
+    color: #fff;
+    background-color: #428bca;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    padding: 6px 10px;
+    
+}
+
+@media (max-width: 768px) {
+    .favorit_room_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .room_thumb {
+        position: static; 
+        
+    }
+    .hoverMask {
+        position: static;
+    }
+    .room_thumb .hoverMask {
+        height: auto; /* or any other value you want for small devices */
+    }
+    .btn_block{
+        margin-bottom: 20px;
+    }
+  
 }

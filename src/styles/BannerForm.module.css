@@ -1,0 +1,107 @@
+.check_availability {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0.85;
+    width: 100%;
+    z-index: 1000;
+    height: 130px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row h2{
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Montserrat';
+    position: relative;
+    padding-left: 70px;
+    line-height: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.row span{
+    color: #fd7e14;
+}
+
+.availability_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.awe_calendar_wrapper label {
+    color: #fd7e14;
+    font-weight: bold;
+}
+
+.awe_calendar_wrapper .awe_calendar {
+    padding: 0 10px 0 5px;
+    background-color: transparent;
+    width: 150px;
+    border: 2px solid #fff;
+    height: 35px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.awe_member {
+    padding: 0 10px 0 5px;
+    background-color: transparent;
+    width: 73px;
+    border: 2px solid #fff;
+    height: 35px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.awe_calendar option {
+    color: black;
+}
+
+.awe_calendar:focus {
+    outline: none;
+}
+.awe_member:focus {
+    outline: none;
+}
+
+.book_btn {
+    color: #fff;
+    background: #fd7e14;
+    text-shadow: 0 -1px 0 #50878e;
+    padding: 4px 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .check_availability {
+        height: 100%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .availability_form {
+        display: flex;
+        flex-direction: column;    
+    }
+    .awe_member {
+        width: 200px;
+    }
+    .book_btn {
+      margin-bottom: 20px;
+    }
+    .awe_calendar_wrapper .awe_calendar {
+        width: 200px;
+    }
+}
