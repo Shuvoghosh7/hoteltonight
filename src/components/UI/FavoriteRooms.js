@@ -1,6 +1,10 @@
 import styles from "@/styles/FavoriteRooms.module.css";
-import Image from "next/image";
 
+import Image from "next/image";
+import Link from "next/link";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 const FavoriteRooms = () => {
     return (
         <div>
@@ -23,31 +27,29 @@ const FavoriteRooms = () => {
                             <div class={styles.price}>$ 99<br /> <span>a night</span></div>
                         </div>
                         <div class={`${styles.content} ${styles.hoverMask}`}>
-                            <p><span>A modern hotel room in Star Hotel</span> Nunc tempor erat in magna pulvinar fermentum. Pellentesque scelerisque at leo nec vestibulum.
+                            <p><span>A modern hotel room in Star Hotel</span> <br></br> Nunc tempor erat in magna pulvinar fermentum. Pellentesque scelerisque at leo nec vestibulum.
                                 malesuada metus.</p>
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="list-unstyled">
-                                        <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
-                                        <li><i class="fa fa-check-circle"></i> Private balcony</li>
-                                        <li><i class="fa fa-check-circle"></i> Sea view</li>
+                            <div className="flex justify-evenly items-center">
+                                <div>
+                                    <ul>
+                                        <li><span> <FontAwesomeIcon icon={faCheckCircle} /> </span> Incl. breakfast</li>
                                     </ul>
                                 </div>
-                                <div class="col-xs-6">
-                                    <ul class="list-unstyled">
-                                        <li><i class="fa fa-check-circle"></i> Free Wi-Fi</li>
-                                        <li><i class="fa fa-check-circle"></i> Incl. breakfast</li>
-                                        <li><i class="fa fa-check-circle"></i> Bathroom</li>
+                                <div>
+                                    <ul>
+                                        <li>Free Wi-Fi</li>
                                     </ul>
                                 </div>
                             </div>
-                            <a href="room-detail.html" class="btn btn-primary btn-block">Read More</a>
+                            
+                            <Link href="/" class={styles.btn_block}>Read More</Link>
                         </div>
                     </div>
 
 
                 </div>
             </div>
+          
         </div>
     )
 };
