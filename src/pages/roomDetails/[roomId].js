@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "@/styles/roomDetailPage.module.css";
 import RootLayout from "@/components/Layouts/RootLayout";
 import Link from "next/link";
@@ -20,6 +20,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const roomDetailPage = () => {
+    const [activeTab, setActiveTab] = useState('overview');
+
+    const handleTabClick = (tabId) => {
+        setActiveTab(tabId);
+    };
     return (
         <div>
             {/* room Detail Page header  */}
@@ -152,25 +157,28 @@ const roomDetailPage = () => {
                 <div>
                     <h2 className={styles.room_facality_heading}><span>Overview</span></h2>
 
-                    <ul class="nav nav-tabs">
-                        <li class="">
-                            <a href="#overview" data-toggle="tab" aria-expanded="false">Overview</a>
-                        </li>
-                        <li class="active"><a href="#facilities" data-toggle="tab" aria-expanded="true">Facilities</a></li>
-                        <li class=""><a href="#extra" data-toggle="tab" aria-expanded="false">Extra</a></li>
+
+
+                    <ul className={`${styles.nav} ${styles.nav_tabs}`}>
+                        <li onClick={() => handleTabClick('overview')}> Overview</li>
+                        <li onClick={() => handleTabClick('facilities')}> Facilities</li>
+                        <li onClick={() => handleTabClick('extra')}> Extra</li>
                     </ul>
 
-                    <div class="tab-content">
-                        <div class="tab-pane fade" id="overview">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum eleifend augue, quis rhoncus purus fermentum. In hendrerit risus arcu, in eleifend metus dapibus varius. Nulla dolor sapien, laoreet vel tincidunt non, egestas non justo. Phasellus et mattis lectus, et gravida urna.</p>
-                            <p><img src="images/tab/restaurant-01.jpg" alt="food" class="pull-right" /> Donec pretium sem non tincidunt iaculis. Nunc at pharetra eros, a varius leo. Mauris id hendrerit justo. Mauris egestas magna vitae nisi ultricies semper. Nam vitae suscipit magna. Nam et felis nulla. Ut nec magna tortor. Nulla dolor sapien, laoreet vel tincidunt non, egestas non justo. </p>
-                        </div>
-                        <div class="tab-pane fade active in" id="facilities">
-                            Phasellus sodales justo felis, a vestibulum risus mattis vitae.
-                        </div>
-                        <div class="tab-pane fade" id="extra">
-                            Pellentesque in massa eu augue placerat cursus sed quis magna.
-                        </div>
+                    <div>
+                        {
+                            activeTab === "overview" && <p>lorem1</p>
+                        }
+                    </div>
+                    <div>
+                        {
+                            activeTab === "facilities" && <p>facilities</p>
+                        }
+                    </div>
+                    <div>
+                        {
+                            activeTab === "extra" && <p>extra</p>
+                        }
                     </div>
 
 
