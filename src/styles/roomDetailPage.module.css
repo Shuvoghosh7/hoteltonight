@@ -1,0 +1,175 @@
+.room_details_container {
+    margin: 0px 50px;
+}
+
+#parallax_pagetitle {
+    background-image: url(../assets/images/roomDetails/Banner-1.jpg);
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    width: 100%;
+}
+
+.breadcrumb {
+    padding: 0;
+    margin: 30px 0 20px 0;
+    list-style: none;
+    background-color: transparent;
+}
+
+.breadcrumb ol {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.active {
+    color: #fd7e14;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* form section  start */
+.form_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    margin: 40px 50px;
+}
+
+.form_container .room_slider {
+    grid-column: span 8;
+}
+
+.form_container .forms {
+    grid-column: span 4;
+}
+
+.reservation_vertical {
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.12);
+    padding: 45px 30px;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.reservation_vertical h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.price {
+    padding: 10px 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    display: block;
+    border: 1px dashed #ebebeb;
+}
+
+.price span {
+    color: #75c5cf !important;
+}
+
+.form_group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5e5e5e;
+}
+
+.form_control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+}
+.form_control:focus{
+    outline: none;
+}
+
+/* room_facality */
+.room_facality_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: 0px 50px;
+
+}
+.room_facality_heading{
+    font-weight: 900;
+    line-height: 1.1;
+    color: #5e5e5e;
+    font-size: 18px;
+    text-align: center;
+}
+.facality_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    margin-top: 40px;
+}
+.facality_list span{
+    color: #75c5cf;
+  
+}
+
+@media (max-width: 768px) {
+    #parallax_pagetitle {
+        padding: 30px 5px;
+    }
+
+
+    .form_container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        margin: 10px 20px;
+    }
+
+    .form_container .room_slider {
+        grid-column: span 12;
+    }
+
+    .form_container .forms {
+        grid-column: span 12;
+    }
+}

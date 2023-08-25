@@ -10,12 +10,12 @@ const Banner = () => {
   return (
     <div>
      
-      <section class={styles.video_container}>
+      <section className={styles.video_container}>
         <video autoPlay muted loop className={styles.auto_video}>
           <source src={EagleVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div class={styles.overlay}>
+        <div className={styles.overlay}>
           <h1>A Five Star Hotel And we like to keep it that way! </h1>
           <p>
             <Link href="/sss">See rooms</Link>

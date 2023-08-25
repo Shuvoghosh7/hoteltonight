@@ -3,7 +3,7 @@ import styles from "@/styles/BannerForm.module.css";
 export default function BannerForm() {
   return (
     <div className={styles.check_availability}>
-      <div class={styles.row}>
+      <div className={styles.row}>
         <div>
           <h2>
             {" "}
@@ -12,10 +12,10 @@ export default function BannerForm() {
         </div>
         <div>
           <form>
-            <div class={styles.availability_form}>
-              <div class={styles.awe_calendar_wrapper}>
+            <div className={styles.availability_form}>
+              <div className={styles.awe_calendar_wrapper}>
                 <label>Room Type</label> <br />
-                <select class={styles.awe_calendar} name="room">
+                <select className={styles.awe_calendar} name="room">
                   <option selected="selected" disabled="disabled">
                     Select a room
                   </option>
@@ -29,7 +29,7 @@ export default function BannerForm() {
                 <input
                   type="date"
                   name="arrive"
-                  class={styles.awe_calendar}
+                  className={styles.awe_calendar}
                   placeholder="Arrival Date"
                 />
               </div>
@@ -38,7 +38,7 @@ export default function BannerForm() {
                 <input
                   type="date"
                   name="departure"
-                  class={styles.awe_calendar}
+                  className={styles.awe_calendar}
                   placeholder="Arrival Date"
                 />
               </div>
@@ -47,7 +47,7 @@ export default function BannerForm() {
                 <input
                   type="number"
                   name="adults"
-                  class={styles.awe_member}
+                  className={styles.awe_member}
                   placeholder="Adults"
                 />
               </div>
@@ -56,13 +56,13 @@ export default function BannerForm() {
                 <input
                   type="number"
                   name="children"
-                  class={styles.awe_member}
+                  className={styles.awe_member}
                   placeholder="Children"
                 />
               </div>
 
               <div className={`${styles.awe_calendar_wrapper} ml-3`}>
-                <button type="submit" class={styles.book_btn}>
+                <button type="submit" className={styles.book_btn}>
                   Book Now
                 </button>
               </div>

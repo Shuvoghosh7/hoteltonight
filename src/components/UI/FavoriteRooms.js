@@ -13,7 +13,7 @@ const FavoriteRooms = () => {
       </div>
 
       <div className={styles.favorit_room_container}>
-        <div class={styles.room_thumb}>
+        <div className={styles.room_thumb}>
           <Image
             src="https://i.ibb.co/q0QPSqc/image1.jpg"
             width={400}
@@ -21,15 +21,15 @@ const FavoriteRooms = () => {
             alt="Picture of the author"
             className={styles.gphoto}
           />
-          <div class={`${styles.mask}`}>
-            <div class={`${styles.main}`}>
+          <div className={`${styles.mask}`}>
+            <div className={`${styles.main}`}>
               <h5>Double bedroom</h5>
-              <div class={styles.price}>
+              <div className={styles.price}>
                 $ 99
                 <br /> <span>a night</span>
               </div>
             </div>
-            <div class={`${styles.content} ${styles.hoverMask}`}>
+            <div className={`${styles.content} ${styles.hoverMask}`}>
               <p>
                 <span>A modern hotel room in Star Hotel</span> <br></br> Nunc
                 tempor erat in magna pulvinar fermentum. Pellentesque
@@ -89,7 +89,7 @@ const FavoriteRooms = () => {
               </div>
 
               <div className="mx-5">
-                <Link href="/" class={styles.btn_block}>
+                <Link href="/roomDetails/1" className={styles.btn_block}>
                   Read More
                 </Link>
               </div>
