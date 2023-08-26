@@ -19,6 +19,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
+import img1 from "../../assets/images/roomDetails/restaurant-01.jpg"
 const roomDetailPage = () => {
     const [activeTab, setActiveTab] = useState('overview');
 
@@ -34,7 +35,7 @@ const roomDetailPage = () => {
                         <ol>
                             <li><Link href="/">Home</Link><span className="ml-3">/</span></li>
                             <li className="ml-3"><Link href="room-list.html">Room list</Link><span className="ml-3">/</span></li>
-                            <li className={`${styles.active} ml-3`}>Room detail</li>
+                            <li className={`${styles.actives} ml-3`}>Room detail</li>
                         </ol>
                     </div>
                 </div>
@@ -90,17 +91,17 @@ const roomDetailPage = () => {
                 <div className={styles.forms}>
                     <div className={styles.reservation_vertical}>
                         <h2><span>Reservation</span></h2>
-                        <div class={styles.price}>
+                        <div className={styles.price}>
                             <h4>Double Room  € 99,-<span> a night</span></h4>
                         </div>
                         <form >
-                            <div class={styles.form_group}>
+                            <div className={styles.form_group}>
                                 <label for="email" >E-mail</label>
-                                <input name="email" type="text" class={styles.form_control} placeholder="Please enter your E-mail" />
+                                <input name="email" type="text" className={styles.form_control} placeholder="Please enter your E-mail" />
                             </div>
-                            <div class={`${styles.form_group} mt-3`}>
+                            <div className={`${styles.form_group} mt-3`}>
                                 <label for="email" >Room Type</label>
-                                <select class={styles.form_control} name="room">
+                                <select className={styles.form_control} name="room">
                                     <option selected="selected" disabled="disabled">
                                         Select a room
                                     </option>
@@ -110,17 +111,17 @@ const roomDetailPage = () => {
                                 </select>
                             </div>
 
-                            <div class={`${styles.form_group} mt-3`}>
+                            <div className={`${styles.form_group} mt-3`}>
                                 <label for="email" >Check-in</label>
-                                <input name="email" type="date" class={styles.form_control} placeholder="Please enter your E-mail" />
+                                <input name="email" type="date" className={styles.form_control} placeholder="Please enter your E-mail" />
                             </div>
-                            <div class={`${styles.form_group} mt-3`}>
+                            <div className={`${styles.form_group} mt-3`}>
                                 <label for="email" >Check-out</label>
-                                <input name="email" type="date" class={styles.form_control} placeholder="Please enter your E-mail" />
+                                <input name="email" type="date" className={styles.form_control} placeholder="Please enter your E-mail" />
                             </div>
-                            <div class={`${styles.form_group} mt-3`}>
+                            <div className={`${styles.form_group} mt-3`}>
                                 <label for="email">Room Number</label>
-                                <input name="email" type="number" class={styles.form_control} placeholder="Please enter room number" />
+                                <input name="email" type="number" className={styles.form_control} placeholder="Please enter room number" />
                             </div>
 
 
@@ -156,28 +157,53 @@ const roomDetailPage = () => {
 
                 <div>
                     <h2 className={styles.room_facality_heading}><span>Overview</span></h2>
-
-
-
                     <ul className={`${styles.nav} ${styles.nav_tabs}`}>
-                        <li onClick={() => handleTabClick('overview')}> Overview</li>
-                        <li onClick={() => handleTabClick('facilities')}> Facilities</li>
-                        <li onClick={() => handleTabClick('extra')}> Extra</li>
+                        <li onClick={() => handleTabClick('overview')} className={activeTab === 'overview' ? styles.active : ''}> Overview</li>
+                        <li onClick={() => handleTabClick('facilities')} className={activeTab === 'facilities' ? styles.active : ''}> Facilities</li>
+                        <li onClick={() => handleTabClick('extra')} className={activeTab === 'extra' ? styles.active : ''}> Extra</li>
                     </ul>
-
                     <div>
                         {
-                            activeTab === "overview" && <p>lorem1</p>
+                            activeTab === "overview" &&
+                            <div>
+                                <div>
+                                    <p className="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum eleifend augue, quis rhoncus purus fermentum. In hendrerit risus arcu, in eleifend metus dapibus varius. Nulla dolor sapien, laoreet vel tincidunt non, egestas non justo. Phasellus et mattis lectus, et gravida urna.</p>
+                                    <p>
+                                        <Image
+                                            src={img1}
+                                            width={230}
+                                            height={160}
+                                            alt="Picture of the author"
+                                            className={styles.pull_right}
+                                        />
+                                        Donec pretium sem non tincidunt iaculis. Nunc at pharetra eros, a varius leo.
+                                        Mauris id hendrerit justo. Mauris egestas magna vitae nisi ultricies semper.
+                                        Nam vitae suscipit magna. Nam et felis nulla. Ut nec magna tortor. Nulla dolor
+                                        sapien, laoreet vel tincidunt non, egestas non justo.
+                                    </p>
+                                </div>
+                            </div>
                         }
                     </div>
                     <div>
                         {
-                            activeTab === "facilities" && <p>facilities</p>
+                            activeTab === "facilities" &&
+                            <p>Phasellus sodales justo felis, a vestibulum risus mattis vitae.
+                                Aliquam vitae varius elit, non facilisis massa.
+                                Vestibulum luctus diam mollis gravida bibendum.
+                                Aliquam mattis velit dolor, sit amet semper erat auctor vel.
+                                Integer auctor in dui ac vehicula. Integer fermentum nunc ut arcu feugiat,
+                                nec placerat nunc tincidunt.
+                                Pellentesque in massa eu augue placerat cursus sed quis magna.
+                            </p>
                         }
                     </div>
                     <div>
                         {
-                            activeTab === "extra" && <p>extra</p>
+                            activeTab === "extra" &&
+                            <p>
+                                Aa vestibulum risus mattis vitae. Aliquam vitae varius elit, non facilisis massa. Vestibulum luctus diam mollis gravida bibendum. Aliquam mattis velit dolor, sit amet semper erat auctor vel. Integer auctor in dui ac vehicula. Integer fermentum nunc ut arcu feugiat, nec placerat nunc tincidunt. Pellentesque in massa eu augue placerat cursus sed quis magna.
+                            </p>
                         }
                     </div>
 
