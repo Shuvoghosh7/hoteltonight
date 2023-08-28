@@ -1,0 +1,22 @@
+.nav_tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.nav_tabs li {
+    cursor: pointer;
+}
+
+.nav_tabs li:not(:first-child) {
+    margin-left: 30px;
+}
+
+.active {
+    color: #fff !important;
+    background: #fd7e14;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
