@@ -35,7 +35,7 @@ const PhotoGrally = () => {
   };
 
   const [selectedImage, setSelectedImage] = useState(null);
-  console.log(selectedImage)
+  
 
 
   const closeLightbox = () => {

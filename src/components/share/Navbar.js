@@ -28,8 +28,8 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/">
-                            Rooms
+                        <Link href="/roomList">
+                            Rooms List
                         </Link>
                     </li>
 

@@ -21,7 +21,7 @@ const RoomList = () => {
             <div className={styles.tab_content}>
                 {
                     activeTab === "singleRoom" &&
-                    <div className="mx-12">
+                    <div className="mx-20">
                         <SingleRoom />
                     </div>
                 }
@@ -29,7 +29,7 @@ const RoomList = () => {
             <div>
                 {
                     activeTab === "doubleRoom" &&
-                    <div className="mx-12">
+                    <div className="mx-20">
                         <DoubleRoom />
                     </div>
                 }
@@ -37,7 +37,7 @@ const RoomList = () => {
             <div>
                 {
                     activeTab === "duplexRoom" &&
-                    <div className="mx-12">
+                    <div className="mx-20">
                         <DuplexRoom />
                     </div>
                 }

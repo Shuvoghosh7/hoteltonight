@@ -1,0 +1,85 @@
+.froom_title{
+    font-weight: 600;
+    line-height: 1.1;
+    color: #5e5e5e;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.froom_title h2{
+    padding: 10px 20px;
+    border-bottom: 4px solid #fd7e14;
+    border-radius: 15px;
+}
+
+
+.popup_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 9999;
+  }
+  
+
+  .popup_container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 50%; 
+    overflow-y: auto; 
+    
+  }
+
+  .close_button {
+    color: black !important;
+    border: none;
+    cursor: pointer;
+    display: flex;
+  }
+  .ups_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+  
+
+  .icon_bg{
+    border: 1px solid #75c5cf;
+    border-radius: 70px;
+    padding: 20px;
+    display: inline-block;
+  }
+  .icon_bg:hover{
+    background-color: #75c5cf;
+  }
+  .beverages{
+    text-align: center;
+    padding: 15px 10px;
+  }
+  .beverages h2{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #5e5e5e;
+  }
+ .beverages h4{
+    color: #1ebed3;
+    cursor: pointer;
+ }
+ .beverages h4:hover{
+    color: #5e5e5e;
+ }
+ .beverages:hover{
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    
+ }
