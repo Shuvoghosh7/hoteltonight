@@ -16,7 +16,7 @@ export default function BannerForm() {
               <div className={styles.awe_calendar_wrapper}>
                 <label>Room Type</label> <br />
                 <select className={styles.awe_calendar} name="room">
-                  <option selected="selected" disabled="disabled">
+                  <option disabled="disabled">
                     Select a room
                   </option>
                   <option value="Single">Single room</option>

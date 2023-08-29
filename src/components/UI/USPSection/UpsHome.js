@@ -5,7 +5,7 @@ import Restaurant from "./Restaurant";
 import Spa from "./Spa";
 const UpsHome = () => {
     return (
-        <div className="mx-20">
+        <div className="">
             <div className={styles.froom_title}>
                 <h2>USP section</h2>
             </div>

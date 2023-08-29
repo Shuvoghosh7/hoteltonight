@@ -63,7 +63,7 @@ const PhotoGrally = () => {
       </div>
       <div className="mt-5">
         <div className="main_iso">
-          <div class="item personal">
+          <div className="item personal">
             <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/q0QPSqc/image1.jpg")}>
               <Image
                 src="https://i.ibb.co/q0QPSqc/image1.jpg"
@@ -74,7 +74,7 @@ const PhotoGrally = () => {
               />
             </div>
           </div>
-          <div class="item personal">
+          <div className="item personal">
           <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/LrdNgTC/image2.jpg")}>
               <Image
                 src="https://i.ibb.co/LrdNgTC/image2.jpg"
@@ -85,7 +85,7 @@ const PhotoGrally = () => {
               />
             </div>
           </div>
-          <div class="item video ">
+          <div className="item video ">
             <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/RCH5Jth/image3.jpg")}>
               <Image
                 src="https://i.ibb.co/RCH5Jth/image3.jpg"
@@ -96,7 +96,7 @@ const PhotoGrally = () => {
               />
             </div>
           </div>
-          <div class="item  video ">
+          <div className="item  video ">
           <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/2893kMN/image4.jpg")}>
               <Image
                 src="https://i.ibb.co/2893kMN/image4.jpg"
@@ -107,7 +107,7 @@ const PhotoGrally = () => {
               />
             </div>
           </div>
-          <div class="item image ">
+          <div className="item image ">
           <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/d20gD1L/image5.jpg")}>
               <Image
                 src="https://i.ibb.co/d20gD1L/image5.jpg"
@@ -118,7 +118,7 @@ const PhotoGrally = () => {
               />
             </div>
           </div>
-          <div class="item image  ">
+          <div className="item image  ">
             <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/5TY8vkP/image6.jpg")}>
               <Image
                 src="https://i.ibb.co/5TY8vkP/image6.jpg"
@@ -129,7 +129,7 @@ const PhotoGrally = () => {
               />
             </div>
           </div>
-          <div class="item post ">
+          <div className="item post ">
           <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/RS3d7pK/image8.jpg")}>
               <Image
                 src="https://i.ibb.co/RS3d7pK/image8.jpg"
@@ -140,7 +140,7 @@ const PhotoGrally = () => {
               />
             </div>
           </div>
-          <div class="item post">
+          <div className="item post">
           <div className={styles.gimage} onClick={() => setSelectedImage("https://i.ibb.co/1qGNDmH/image9.jpg")}>
               <Image
                 src="https://i.ibb.co/1qGNDmH/image9.jpg"

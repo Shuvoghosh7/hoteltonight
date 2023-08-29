@@ -96,13 +96,13 @@ const roomDetailPage = () => {
                         </div>
                         <form >
                             <div className={styles.form_group}>
-                                <label for="email" >E-mail</label>
+                                <label >E-mail</label>
                                 <input name="email" type="text" className={styles.form_control} placeholder="Please enter your E-mail" />
                             </div>
                             <div className={`${styles.form_group} mt-3`}>
-                                <label for="email" >Room Type</label>
+                                <label  >Room Type</label>
                                 <select className={styles.form_control} name="room">
-                                    <option selected="selected" disabled="disabled">
+                                    <option  disabled="disabled">
                                         Select a room
                                     </option>
                                     <option value="Single">Single room</option>
@@ -112,15 +112,15 @@ const roomDetailPage = () => {
                             </div>
 
                             <div className={`${styles.form_group} mt-3`}>
-                                <label for="email" >Check-in</label>
+                                <label >Check-in</label>
                                 <input name="email" type="date" className={styles.form_control} placeholder="Please enter your E-mail" />
                             </div>
                             <div className={`${styles.form_group} mt-3`}>
-                                <label for="email" >Check-out</label>
+                                <label>Check-out</label>
                                 <input name="email" type="date" className={styles.form_control} placeholder="Please enter your E-mail" />
                             </div>
                             <div className={`${styles.form_group} mt-3`}>
-                                <label for="email">Room Number</label>
+                                <label >Room Number</label>
                                 <input name="email" type="number" className={styles.form_control} placeholder="Please enter room number" />
                             </div>
 

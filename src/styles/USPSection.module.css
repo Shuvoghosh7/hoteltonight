@@ -83,3 +83,11 @@
     border-radius: 10px;
     
  }
+
+ @media (max-width: 768px) {
+  .ups_container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+ }
