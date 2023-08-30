@@ -1,0 +1,116 @@
+.froom_title{
+    font-weight: 600;
+    line-height: 1.1;
+    color: #5e5e5e;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.froom_title h2{
+    padding: 10px 20px;
+    border-bottom: 4px solid #fd7e14;
+    border-radius: 15px;
+}
+.services_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.services_container .slider_container {
+    grid-column: span 8;
+}
+
+.services_container .counter_main {
+    grid-column: span 4;
+}
+
+.counter_item_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    grid-column-gap: 20px;
+}
+.CountUp{
+    color: #c9c9c9;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 9 
+}
+.counter_item {
+    background: #353535;
+    color: white;
+    text-align: center;
+    padding: 36.2px 20px;
+    border-radius: 3px;
+}
+.counter_item h3{
+    color: #c9c9c9;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 9
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_image {
+    width: 100%;
+    height: 500px;
+}
+
+
+@media (max-width: 768px) {
+
+    .services_container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+    }
+
+    .services_container .slider_container {
+        grid-column: span 12;
+    }
+
+    .services_container .counter_main {
+        grid-column: span 12;
+    }
+
+    .slider_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .counter_item_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .counter_item {
+        padding:20px;
+    }
+   
+}
+@media (max-width: 500px) {
+    .counter_item_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
