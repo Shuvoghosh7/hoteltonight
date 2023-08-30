@@ -11,18 +11,18 @@ import UpsHome from "@/components/UI/USPSection/UpsHome";
 export default function Home() {
   return (
     <div >
-      {/* <Banner/>
+      <Banner/>
       <div className="mt-12 mx-20">
         <FavoriteRooms/>
       </div>
       <div className="mt-12  mx-20">
         <UpsHome/>
       </div>
-      <div className="flex justify-center mt-16  mx-20 ">
-        <PhotoGrally />
-      </div> */}
       <div className="mt-12  mx-20">
         <Services/>
+      </div>
+      <div className="mt-16  lg:mx-20 mx-5">
+        <PhotoGrally />
       </div>
     </div>
   )
