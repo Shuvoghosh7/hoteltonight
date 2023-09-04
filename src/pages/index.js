@@ -22,13 +22,14 @@ export default function Home() {
       <div className="mt-12  mx-20">
         <Services/>
       </div>
+      <div className="mt-16  lg:mx-2 mx-5">
+      <SpecialOffers/>
+      </div>
       <div className="mt-16  lg:mx-20 mx-5">
         <PhotoGrally />
       </div>
       
-      <div className="mt-16  lg:mx-20 mx-5">
-      <SpecialOffers/>
-      </div>
+      
       
    
     </div>
