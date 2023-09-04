@@ -1,0 +1,196 @@
+.froom_title{
+    font-weight: 600;
+    line-height: 1.1;
+    color: #5e5e5e;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.froom_title h2{
+    padding: 10px 20px;
+    border-bottom: 4px solid #fd7e14;
+    border-radius: 15px;
+}
+.specialOffers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+.offer_item {
+    position: relative;
+    cursor: pointer;
+}
+.offer_item figure .img_fluid {
+    border-radius: 2px;
+    max-width: 100%;
+   
+  
+}
+.gradient_overlay_hover {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.gradient_overlay:after, .gradient_overlay_hover:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));
+    opacity: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+   
+}
+
+.offer_item .offer_price {
+    position: absolute;
+    top: 10px;
+    left: 353px;
+    padding: 5px 20px;
+    border-radius: 2px;
+    background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.offer_item .offer_title {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 0 4px 4px 0;
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.offer_item .ribbon {
+    position: absolute;
+    left: 35px;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+    width: 800px;
+    height: 75px;
+    text-align: right;
+    
+}
+.offer_item .ribbon span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));
+    -webkit-box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 03);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 03);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+}
+
+.offer_item .ribbon span::before {
+    left: 0;
+    border-left: 3px solid #b5191e;
+    border-right: 3px solid transparent;
+}
+.offer_item .ribbon span::after, .offer_item .ribbon span::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #b5191e;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); 
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+  }
+  
+  .offer_item:hover .overlay {
+    opacity: 1;
+  }
+
+.buttonContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+  }
+  
+  .overlayButton {
+    padding: 10px 20px;
+    background: linear-gradient(rgb(240, 100, 150), rgb(140, 200, 208)), rgba(255, 255, 255, 0.3);
+    color: #faf8f8; 
+    border:none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    display: none;
+    border-radius: 50px;
+  }
+  
+  .overlayButton:hover {
+    background-color: #333; 
+    color: #fff;
+    display: block;
+  }
+  
+  .offer_item:hover .overlayButton {
+    display: block;
+  }
+  
+@media (max-width: 768px) {
+    .specialOffers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+  
+    .offer_item .offer_title {
+      font-size: 14px;
+      left: 20px;
+    
+    }
+    .offer_item .offer_price {
+        position: absolute;
+        top: 0px;
+        left: 125px;
+        padding: 5px 20px;
+        border-radius: 2px;
+        background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+     
+    }
+  
+  
+  }

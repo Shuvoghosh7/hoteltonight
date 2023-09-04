@@ -4,7 +4,7 @@ import Navbar from "../share/Navbar";
 const RootLayout = ({ children }) => {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
         { children }
         <div>
             footer
