@@ -1,9 +1,10 @@
 import React, { useState } from "react"
-import Popup from "./Popup";
+
 import styles from "@/styles/USPSection.module.css";
 import icon1 from "../../../assets/images/icon/1996055.png";
 import Image from "next/image";
 import Link from "next/link";
+import Popup from "../Popup/Popup";
 
 const Beverages = () => {
     const [showPopup, setShowPopup] = useState(false);

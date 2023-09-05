@@ -1,3 +1,4 @@
+
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Banner";
 import FavoriteRooms from "@/components/UI/FavoriteRooms";
@@ -8,30 +9,27 @@ import Beverages from "@/components/UI/USPSection/Beverages";
 import UpsHome from "@/components/UI/USPSection/UpsHome";
 
 
-
 export default function Home() {
+
   return (
     <div >
-      <Banner/>
+      <Banner />
       <div className="mt-12 mx-20">
-        <FavoriteRooms/>
+        <FavoriteRooms />
       </div>
       <div className="mt-12  mx-20">
-        <UpsHome/>
+        <UpsHome />
       </div>
       <div className="mt-12  mx-20">
-        <Services/>
+        <Services />
       </div>
       <div className="mt-16  lg:mx-2 mx-5">
-      <SpecialOffers/>
+        <SpecialOffers />
       </div>
       <div className="mt-16  lg:mx-20 mx-5">
         <PhotoGrally />
       </div>
-      
-      
-      
-   
+
     </div>
   )
 }

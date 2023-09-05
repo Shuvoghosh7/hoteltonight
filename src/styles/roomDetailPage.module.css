@@ -121,8 +121,19 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 
 }
+.form_control_2{
+    width: 300px !important;
+}
 .form_control:focus{
     outline: none;
+}
+.btn_primary {
+    background-color: #75c5cf;
+    border-color: #35929e;
+    text-shadow: 0 -1px 0 #50878e;
+    padding: 6px 0;
+    border-radius: 4px;
+    color: rgb(71, 71, 71);
 }
 
 /* room_facality */

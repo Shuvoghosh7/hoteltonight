@@ -2,8 +2,10 @@ import React, { useState } from "react"
 
 import styles from "@/styles/SpecialOffers.module.css";
 import Image from "next/image";
-import Popup from "../USPSection/Popup";
+
 import himage from "../../../assets/images/spoffer/offer1.jpg";
+import CommonForm from "../CommonForm";
+import Popup from "../Popup/Popup";
 
 const HoneymoonPackage = () => {
     const [showPopup, setShowPopup] = useState(false);
@@ -16,10 +18,8 @@ const HoneymoonPackage = () => {
         setShowPopup(false);
     };
     const content = (
-        <div>
-            <p>
-                spcial offer
-            </p>
+        <div className={styles.common_form}>
+            <CommonForm/>
         </div>
     );
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Popup from "./Popup";
+import Popup from "../Popup/Popup";
 import styles from "@/styles/USPSection.module.css";
 import icon1 from "../../../assets/images/icon/spa-icon.png";
 import Image from "next/image";
