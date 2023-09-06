@@ -57,6 +57,9 @@
     position: relative; 
     overflow: hidden; 
 }
+.room_thumb .gphoto{
+    width: 100%;
+}
 
 .hoverMask {
     position: absolute;
@@ -69,8 +72,10 @@
     padding: 0px;
     box-sizing: border-box;
     transition: height 0.4s ease-in-out;
+  
 
 }
+
 .content p{
     padding: 20px;
     font-size: 16px;
@@ -87,6 +92,7 @@
 
 .room_thumb:hover .hoverMask {
     height: 100%;
+  
 }
 .btn_block{
     color: #fff;

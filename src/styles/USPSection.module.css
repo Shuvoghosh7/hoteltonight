@@ -55,7 +55,9 @@
     border-radius: 10px;
     
  }
-
+.popup_img{
+  
+}
  @media (max-width: 768px) {
   .ups_container{
     display: grid;

@@ -20,6 +20,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 import img1 from "../../assets/images/roomDetails/restaurant-01.jpg"
+import Head from "next/head";
 const roomDetailPage = () => {
     const [activeTab, setActiveTab] = useState('overview');
 
@@ -28,6 +29,15 @@ const roomDetailPage = () => {
     };
     return (
         <div>
+            <Head>
+                <title>Room Details</title>
+                <meta
+                    name="description"
+                    content="This is Hotel Booking System made by next-js"
+                />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             {/* room Detail Page header  */}
             <section id={styles.parallax_pagetitle}>
                 <div className={styles.room_details_container}>
@@ -102,7 +112,7 @@ const roomDetailPage = () => {
                             <div className={`${styles.form_group} mt-3`}>
                                 <label  >Room Type</label>
                                 <select className={styles.form_control} name="room">
-                                    <option  disabled="disabled">
+                                    <option disabled="disabled">
                                         Select a room
                                     </option>
                                     <option value="Single">Single room</option>
@@ -141,15 +151,15 @@ const roomDetailPage = () => {
                     <h2 className={styles.room_facality_heading}><span>Room Details</span></h2>
 
                     <div className={styles.facality_list}>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
-                        <p><span className="m-3"><FontAwesomeIcon icon={faCheckCircle} /></span>Incl. breakfast</p>
+                        <p><span className="m-3">1</span>Incl. breakfast</p>
+                        <p><span className="m-3">2</span>Incl. breakfast</p>
+                        <p><span className="m-3">3</span>Incl. breakfast</p>
+                        <p><span className="m-3">4</span>Incl. breakfast</p>
+                        <p><span className="m-3">5</span>Incl. breakfast</p>
+                        <p><span className="m-3">7</span>Incl. breakfast</p>
+                        <p><span className="m-3">8</span>Incl. breakfast</p>
+                        <p><span className="m-3">9</span>Incl. breakfast</p>
+                        <p><span className="m-3">10</span>Incl. breakfast</p>
                     </div>
 
 

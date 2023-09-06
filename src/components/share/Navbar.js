@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styles from "@/styles/Navbar.module.css";
 import Link from "next/link";
-
+import himage from "../../assets/images/logo.png";
 import Image from "next/image";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +14,13 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.logo}>
                 <Link href="/">
-                    HotelTonight
+                    <Image
+                        src={himage}
+                        width={100}
+                        height={50}
+                        alt="Picture of the author"
+                        className={styles.gphoto}
+                    />
                 </Link>
             </div>
             <button className={styles.menuButton} onClick={toggleMenu}>
