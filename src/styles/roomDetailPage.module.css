@@ -210,4 +210,13 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
+    .form_control_2{
+        width: 100% !important;
+    }
+    .reservation_vertical {
+
+        padding: 45px 3px;
+       
+    }
+   
 }
