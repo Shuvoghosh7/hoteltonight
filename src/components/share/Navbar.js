@@ -1,17 +1,33 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import styles from "@/styles/Navbar.module.css";
 import Link from "next/link";
 import himage from "../../assets/images/logo.png";
 import Image from "next/image";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
-
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+    useEffect(() => {
+        const navbar = document.querySelector(`.${styles.navbar}`);
+        const handleScroll = () => {
+          if (window.scrollY > 100) {
+            navbar.classList.add(styles.fixed);
+          } else {
+            navbar.classList.remove(styles.fixed);
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+    
     return (
-        <nav className={styles.navbar}>
+        <nav className={styles.navbar} >
             <div className={styles.logo}>
                 <Link href="/">
                     <Image

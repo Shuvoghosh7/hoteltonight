@@ -28,7 +28,7 @@ const FamilyPackage = () => {
                 <figure className={`${styles.gradient_overlay_hover} ${styles.link_icon}`}>
                     <Image
                         src={himage}
-                        width={480}
+                        width={650}
                         height={550}
                         alt="Picture of the author"
                         className={styles.img_fluid}

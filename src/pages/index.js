@@ -2,6 +2,7 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Banner";
 import FavoriteRooms from "@/components/UI/FavoriteRooms";
+import LatestNews from "@/components/UI/LatestNews/LatestNews";
 import PhotoGrally from "@/components/UI/PhotoGrallry";
 import Services from "@/components/UI/Services";
 import SpecialOffers from "@/components/UI/Special Offers/SpecialOffersHome";
@@ -24,7 +25,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Banner />
+      <Banner />
       <div className="mt-12 mx-32">
         <FavoriteRooms />
       </div>
@@ -33,16 +34,20 @@ export default function Home() {
       </div>
       <div className="mt-12  mx-32">
         <Services />
-      </div> */}
+      </div>
       <div className="mt-16  lg:mx-32 mx-5">
         <SpecialOffers />
+      </div>
+      <div className="mt-16  lg:mx-32 mx-5">
+        <PhotoGrally />
       </div>
       <div className="mt-16">
         <Testimonial />
       </div>
       <div className="mt-16  lg:mx-32 mx-5">
-        <PhotoGrally />
+        <LatestNews />
       </div>
+
 
     </div>
   )

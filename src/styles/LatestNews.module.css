@@ -1,0 +1,290 @@
+.latest_title{
+    font-weight: 600;
+    line-height: 1.1;
+    color: #5e5e5e;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+.letest_news_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    
+}
+
+.img_fluid{
+    width: 100%;
+}
+.news_info {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #efefef;
+    border-top: none;
+}
+.news_info .news_title{
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1.2;
+    color:#b5bec4;;
+    font-size: 25px;
+}
+.post_meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.post_meta h4{
+    color:#b5bec4;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.author_img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    
+}
+.author_name{
+    color:#b5bec4;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.bg_image_container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bg_news {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+/* Text overlay styles */
+.overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+ 
+}
+.overlay .news_title{
+    color: #fff;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.bg_image_container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));
+    opacity: 0.5;
+    transition: opacity 0.4s;
+    z-index: 1;
+}
+
+.overlay .author_img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.overlay h5{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.blog_content{
+    display: grid;
+    grid-template-columns: 77% 20%;
+    margin:35px;
+    gap: 30px;
+    
+}
+.blog_content p{
+    font-size: 18px;
+    line-height: 40px;
+    text-align: justify;
+}
+.blog_content .latest_blog{
+    border: 1px solid #efefef;
+    padding: 15px;
+}
+.latest_blog h1{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #bdbdbd;
+    text-transform: uppercase;
+   
+}
+.post_img{
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+}
+.comment_container .section_title{
+    margin:0 35px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #bdbdbd;
+    text-transform: uppercase;
+}
+.section_title .section_subtitle{
+    font-size: 20px;
+}
+.comment_container form{
+    margin: 20px 100px;
+}
+
+.form_control{
+    padding: 15px 20px;
+    width: 400px;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 30px;
+}
+.form_control:focus{
+    outline: none;
+}
+
+.form_control_textarea{
+    padding: 15px 20px;
+    width: 850px;
+    height:150px;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 20px;
+}
+.form_control_textarea:focus{
+    outline: none;
+}
+
+.form_submit_btn input {
+    background: #edcb9a;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: 10px 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.post_view_container{
+    margin: 0 100px;
+    display: flex;
+    justify-content: start;
+}
+
+.comment_info_container{
+    background: #fff;
+    border: 1px solid #efefef;
+    border-left: 5px;
+    border-left: 8px solid #efefef;
+    position: relative;
+    margin-left: 30px;
+    width: 740px;
+    padding: 7px 15px;
+}
+.comment_info_container h1{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b5bec4;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+.comment_info_container:before {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: block;
+    border-width: 10px 12px 10px 0;
+    border-style: solid;
+    border-color: transparent #efefef;
+    top: 15px;
+    left: -18px;
+}
+.comment_avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    position: relative;
+    float: left;
+    background: #fff;
+    border: 1px dashed #e3e3e3;
+    overflow: hidden;
+    padding: 2px;
+}
+.comment_author_img{
+    width: 100%;
+    height: 100%;
+}
+.Latest_Post_img{
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+.Latest_Post_title {
+    color: #b5bec4;
+    font-size: 17.5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Latest_Post_title:hover {
+    color:#ffc107;
+}
+@media (max-width: 768px) {
+    .blog_content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin:10px 20px;
+        gap: 10px;
+        
+    }
+    .form_control{
+        width: 100%;
+    }
+    .form_control_textarea{
+        width: 100%;
+    }
+    .comment_info_container{
+        width: 100%;
+    }
+    .post_view_container{
+        margin: 0 35px;
+    }
+    .comment_container form{
+        margin: 20px 35px;
+    }
+}
