@@ -5,6 +5,7 @@ import FavoriteRooms from "@/components/UI/FavoriteRooms";
 import LatestNews from "@/components/UI/LatestNews/LatestNews";
 import PhotoGrally from "@/components/UI/PhotoGrallry";
 import Services from "@/components/UI/Services";
+import SpaService from "@/components/UI/SpaService";
 import SpecialOffers from "@/components/UI/Special Offers/SpecialOffersHome";
 import Testimonial from "@/components/UI/Testimonial";
 import Beverages from "@/components/UI/USPSection/Beverages";
@@ -25,7 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Banner />
+      {/* <Banner />
       <div className="mt-12 mx-32">
         <FavoriteRooms />
       </div>
@@ -43,10 +44,15 @@ export default function Home() {
       </div>
       <div className="mt-16">
         <Testimonial />
-      </div>
+      </div> */}
       <div className="mt-16  lg:mx-32 mx-5">
         <LatestNews />
       </div>
+      <div className="mt-16">
+        <SpaService />
+      </div>
+      
+
 
 
     </div>

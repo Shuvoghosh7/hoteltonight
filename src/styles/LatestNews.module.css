@@ -265,6 +265,12 @@
     color:#ffc107;
 }
 @media (max-width: 768px) {
+    .letest_news_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        
+    }
     .blog_content{
         display: grid;
         grid-template-columns: repeat(1,1fr);
