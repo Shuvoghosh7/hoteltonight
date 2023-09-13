@@ -134,4 +134,7 @@
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
     }
+    .spa_container_details::before {
+        background-attachment: scroll;
+    }
 }

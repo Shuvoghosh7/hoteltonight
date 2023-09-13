@@ -26,7 +26,7 @@ const LatestNews = () => {
                         </h4>
                         <p>An examination of how the current political and economical climate is affecting the mental healthcare industry...</p>
                         <div className={styles.post_meta}>
-                            <div>
+                            <div className={styles.author_name_img}>
                                 <Image
                                     src={blog1}
                                     width={50}
@@ -37,11 +37,13 @@ const LatestNews = () => {
                                 <span className={styles.author_name}>JANE</span>
                             </div>
 
-                            <h4 className={styles.date}>
-                                August 13, 2017</h4>
-                            <h4 className={styles.comments}>
-                                1 Comment
-                            </h4>
+                            <div className={styles.publication_date_comment}>
+                                <h4 className={styles.date}>
+                                    August 13, 2017</h4>
+                                <h4 className={styles.comments}>
+                                    1 Comment
+                                </h4>
+                            </div>
                         </div>
 
                     </div>

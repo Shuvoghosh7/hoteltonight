@@ -33,6 +33,15 @@
     font-size: 25px;
 }
 .post_meta{
+    margin-top: 10px;
+}
+.author_name_img{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+
+}
+.publication_date_comment{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -264,6 +273,7 @@
 .Latest_Post_title:hover {
     color:#ffc107;
 }
+
 @media (max-width: 768px) {
     .letest_news_container{
         display: grid;
@@ -293,4 +303,6 @@
     .comment_container form{
         margin: 20px 35px;
     }
+ 
+    
 }
