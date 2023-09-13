@@ -6,6 +6,7 @@ import spa2 from "../../assets/images/spa/spa1.jpg";
 import spa3 from "../../assets/images/spa/spa2.jpg";
 import spa4 from "../../assets/images/spa/spa3.jpg";
 import spa5 from "../../assets/images/spa/spa4.jpg";
+
 const spaDetails = () => {
   return (
     <div>
@@ -15,11 +16,11 @@ const spaDetails = () => {
       <div className=" lg:mx-32 mx-5 mt-16">
         <div className={styles.spa_details_content}>
           <Image
-            src={spa1}
+            src={spa2}
             width={230}
             height={160}
             alt="Picture of the author"
-            className={styles.pull_right}
+            className={styles.pull_right1}
           />
           <p> Donec pretium sem non tincidunt iaculis. Nunc at pharetra eros, a varius leo.
             Mauris id hendrerit justo. Mauris egestas magna vitae nisi ultricies semper.

@@ -57,7 +57,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/images//banner/slide-bg.jpg);
+    background-image: url(../assets/images/spa/spa.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,14 +92,24 @@
     font-size: 16px;
     text-align: justify;
 }
+.pull_right1 {
+    width: 400px;
+  
+    float: left !important;
+    padding-right:20px;
+    margin-top: 10px;
+}
 .pull_right {
     width: 400px;
     float: left !important;
+    padding-right:20px;
+    height: auto;
 }
 .spa_services{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    margin:20px 0px;
 }
 .spa_details_content2 p{
     font-family: 'Roboto', sans-serif;
