@@ -39,7 +39,7 @@ const roomDetailPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {/* room Detail Page header  */}
-            <section id={styles.parallax_pagetitle}>
+            <section id={styles.parallax_pagetitle} className="mt-28">
                 <div className={styles.room_details_container}>
                     <div className={styles.breadcrumb}>
                         <ol>

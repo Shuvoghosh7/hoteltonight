@@ -5,6 +5,7 @@ import himage from "../../assets/images/logo.png";
 import Image from "next/image";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -12,7 +13,7 @@ const Navbar = () => {
     useEffect(() => {
         const navbar = document.querySelector(`.${styles.navbar}`);
         const handleScroll = () => {
-          if (window.scrollY > 100) {
+          if (window.scrollY > 200) {
             navbar.classList.add(styles.fixed);
           } else {
             navbar.classList.remove(styles.fixed);

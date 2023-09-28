@@ -1,6 +1,7 @@
 
 import RootLayout from "@/components/Layouts/RootLayout";
 import Banner from "@/components/UI/Banner";
+import BannerForm from "@/components/UI/BannerForm";
 import FavoriteRooms from "@/components/UI/FavoriteRooms";
 import LatestNews from "@/components/UI/LatestNews/LatestNews";
 import PhotoGrally from "@/components/UI/PhotoGrallry";
@@ -11,7 +12,7 @@ import Testimonial from "@/components/UI/Testimonial";
 import Beverages from "@/components/UI/USPSection/Beverages";
 import UpsHome from "@/components/UI/USPSection/UpsHome";
 import Head from "next/head";
-
+import styles from "@/styles/BannerForm.module.css";
 
 export default function Home() {
 
@@ -26,7 +27,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Banner />
+      <Banner />
+      <section className={styles.banner_form}>
+        <BannerForm/>
+      </section>
       <div className="mt-12 mx-32">
         <FavoriteRooms />
       </div>
@@ -44,7 +48,7 @@ export default function Home() {
       </div>
       <div className="mt-16">
         <Testimonial />
-      </div> */}
+      </div>
       <div className="mt-16  lg:mx-32 mx-5">
         <LatestNews />
       </div>

@@ -3,10 +3,10 @@ import styles from "@/styles/BannerForm.module.css";
 export default function BannerForm() {
   return (
     <div className={styles.check_availability}>
+
       <div className={styles.row}>
         <div>
           <h2>
-            {" "}
             CHECK <br /> <span>AVAILABILITY</span>
           </h2>
         </div>
@@ -70,6 +70,7 @@ export default function BannerForm() {
           </form>
         </div>
       </div>
+
     </div>
   );
 }

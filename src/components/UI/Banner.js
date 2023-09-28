@@ -5,7 +5,7 @@ import EagleVideo from "../../assets/images/banner/watermarked_preview.mp4";
 import styles from "@/styles/Banner.module.css";
 
 import Link from "next/link";
-import BannerForm from "./BannerForm";
+
 const Banner = () => {
   return (
     <div>
@@ -15,17 +15,15 @@ const Banner = () => {
           <source src={EagleVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className={styles.overlay}>
+        <div className={styles.overlay}>    
           <h1>A Five Star Hotel And we like to keep it that way! </h1>
           <p>
-            <Link href="/sss">See rooms</Link>
+            <Link href="/roomList">See rooms</Link>
           </p>
         </div>
       </section>
 
-      <section className={styles.banner_form}>
-        <BannerForm/>
-      </section>
+    
     </div>
   );
 };
