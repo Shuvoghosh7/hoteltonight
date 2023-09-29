@@ -16,7 +16,7 @@ const LatestPost = () => {
 
             <div className={styles.Latest_Post_title}>
                 <p>
-                <Link href="newsDetails/1">10 Tips for Holiday Travel</Link>
+                <Link href="1">10 Tips for Holiday Travel</Link>
                 </p>
             </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/BannerForm.module.css";
+
 export default function BannerForm() {
   return (
     <div className={styles.check_availability}>

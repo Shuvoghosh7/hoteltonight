@@ -21,6 +21,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 import img1 from "../../assets/images/roomDetails/restaurant-01.jpg"
 import Head from "next/head";
+import { AiFillCheckCircle } from "react-icons/ai";
 const roomDetailPage = () => {
     const [activeTab, setActiveTab] = useState('overview');
 
@@ -133,6 +134,10 @@ const roomDetailPage = () => {
                                 <label >Room Number</label>
                                 <input name="email" type="number" className={styles.form_control} placeholder="Please enter room number" />
                             </div>
+                            <div className={`${styles.form_group} mt-5`}>
+                                <button className={styles.form_control_btn}>Submit</button>
+                                
+                            </div>
 
 
 
@@ -151,15 +156,43 @@ const roomDetailPage = () => {
                     <h2 className={styles.room_facality_heading}><span>Room Details</span></h2>
 
                     <div className={styles.facality_list}>
-                        <p><span className="m-3">1</span>Incl. breakfast</p>
-                        <p><span className="m-3">2</span>Incl. breakfast</p>
-                        <p><span className="m-3">3</span>Incl. breakfast</p>
-                        <p><span className="m-3">4</span>Incl. breakfast</p>
-                        <p><span className="m-3">5</span>Incl. breakfast</p>
-                        <p><span className="m-3">7</span>Incl. breakfast</p>
-                        <p><span className="m-3">8</span>Incl. breakfast</p>
-                        <p><span className="m-3">9</span>Incl. breakfast</p>
-                        <p><span className="m-3">10</span>Incl. breakfast</p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        <p className="flex items-center">      
+                            <AiFillCheckCircle />
+                            <span> Incl. breakfast</span>
+                        </p>
+                        
                     </div>
 
 

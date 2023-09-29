@@ -1,5 +1,5 @@
 import styles from "@/styles/FavoriteRooms.module.css";
-
+import { AiFillCheckCircle } from 'react-icons/ai';
 import Image from "next/image";
 import Link from "next/link";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -30,52 +30,52 @@ const FavoriteRooms = () => {
               </div>
             </div>
             <div className={`${styles.content} ${styles.hoverMask}`}>
-            
-                <p>
-                  <span>A modern hotel room in Star Hotel</span> <br></br> Nunc
-                  tempor erat in magna pulvinar fermentum. Pellentesque
-                  scelerisque at leo nec vestibulum. malesuada metus.
-                </p>
-                <div className="flex justify-between items-center mx-5">
-                  <div>
-                    <ul>
-                      <li>
-                        <span>1</span>
-                        Incl. breakfast
-                      </li>
-                      <li>
-                        <span>2</span>
-                        Private balcony
-                      </li>
-                      <li>
-                        <span>3</span>
-                        Sea view
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <ul>
-                      <li>
-                        <span>4</span>
-                        Free Wi-Fi
-                      </li>
-                      <li>
-                        <span>5</span>
-                        Incl. breakfast
-                      </li>
-                      <li>
-                        <span>6</span>
-                        Bathroom
-                      </li>
-                    </ul>
-                  </div>
+
+              <p>
+                <span>A modern hotel room in Star Hotel</span> <br></br> Nunc
+                tempor erat in magna pulvinar fermentum. Pellentesque
+                scelerisque at leo nec vestibulum. malesuada metus.
+              </p>
+              <div className="flex justify-between items-center mx-5">
+                <div>
+                  <ul>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /> </span>
+                      Incl. breakfast
+                    </li>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /> </span>
+                      Private balcony
+                    </li>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
+                      Sea view
+                    </li>
+                  </ul>
                 </div>
-                <div className="mx-5">
-                  <Link href="/roomDetails/1" className={styles.btn_block}>
-                    Read More
-                  </Link>
+                <div>
+                  <ul>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
+                      Free Wi-Fi
+                    </li>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
+                      Incl. breakfast
+                    </li>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
+                      Bathroom
+                    </li>
+                  </ul>
                 </div>
-              
+              </div>
+              <div className="mx-5">
+                <Link href="/roomDetails/1" className={styles.btn_block}>
+                  Read More
+                </Link>
+              </div>
+
             </div>
           </div>
         </div>
@@ -96,6 +96,7 @@ const FavoriteRooms = () => {
               </div>
             </div>
             <div className={`${styles.content} ${styles.hoverMask}`}>
+
               <p>
                 <span>A modern hotel room in Star Hotel</span> <br></br> Nunc
                 tempor erat in magna pulvinar fermentum. Pellentesque
@@ -104,43 +105,43 @@ const FavoriteRooms = () => {
               <div className="flex justify-between items-center mx-5">
                 <div>
                   <ul>
-                    <li>
-                      <span>1</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /> </span>
                       Incl. breakfast
                     </li>
-                    <li>
-                      <span>2</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /> </span>
                       Private balcony
                     </li>
-                    <li>
-                      <span>3</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Sea view
                     </li>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <li>
-                      <span>4</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Free Wi-Fi
                     </li>
-                    <li>
-                      <span>5</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Incl. breakfast
                     </li>
-                    <li>
-                      <span>6</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Bathroom
                     </li>
                   </ul>
                 </div>
               </div>
-
               <div className="mx-5">
                 <Link href="/roomDetails/1" className={styles.btn_block}>
                   Read More
                 </Link>
               </div>
+
             </div>
           </div>
         </div>
@@ -161,6 +162,7 @@ const FavoriteRooms = () => {
               </div>
             </div>
             <div className={`${styles.content} ${styles.hoverMask}`}>
+
               <p>
                 <span>A modern hotel room in Star Hotel</span> <br></br> Nunc
                 tempor erat in magna pulvinar fermentum. Pellentesque
@@ -169,46 +171,47 @@ const FavoriteRooms = () => {
               <div className="flex justify-between items-center mx-5">
                 <div>
                   <ul>
-                    <li>
-                      <span>1</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /> </span>
                       Incl. breakfast
                     </li>
-                    <li>
-                      <span>2</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /> </span>
                       Private balcony
                     </li>
-                    <li>
-                      <span>3</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Sea view
                     </li>
                   </ul>
                 </div>
                 <div>
                   <ul>
-                    <li>
-                      <span>4</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Free Wi-Fi
                     </li>
-                    <li>
-                      <span>5</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Incl. breakfast
                     </li>
-                    <li>
-                      <span>6</span>
+                    <li className="flex">
+                      <span><AiFillCheckCircle /></span>
                       Bathroom
                     </li>
                   </ul>
                 </div>
               </div>
-
               <div className="mx-5">
                 <Link href="/roomDetails/1" className={styles.btn_block}>
                   Read More
                 </Link>
               </div>
+
             </div>
           </div>
         </div>
+      
       </div>
     </div>
   );
