@@ -50,9 +50,45 @@
 }
 
 .footer_body_container{
-    padding: 20px 100px;
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
 
+.copy_rigth_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+    padding: 10px 0;
+    text-align: center;
+    color: #acacac;
+    font-size: 12.22px;
+}
+.icon_container{
+    font-size: 16px;
+    color: #fff;
+    line-height: 38px;
+}
+.footer_icon{
+    font-size: 20px;
+    margin-top: -3px;
+}
+.usefule_link_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+}
+.usefule_link_container h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+.usefule_link_container ul li{
+    line-height: 38px;
+}
 @media (max-width: 768px) {
     .footer_logo{
         padding-left: 10px;

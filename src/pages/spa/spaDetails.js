@@ -6,6 +6,7 @@ import spa2 from "../../assets/images/spa/spa1.jpg";
 import spa3 from "../../assets/images/spa/spa2.jpg";
 import spa4 from "../../assets/images/spa/spa3.jpg";
 import spa5 from "../../assets/images/spa/spa4.jpg";
+import RootLayout from "@/components/Layouts/RootLayout";
 
 const spaDetails = () => {
   return (
@@ -112,3 +113,7 @@ const spaDetails = () => {
 };
 
 export default spaDetails;
+
+spaDetails.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};

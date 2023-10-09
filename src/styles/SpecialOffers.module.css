@@ -1,18 +1,33 @@
 .froom_title{
-    font-weight: 600;
-    line-height: 1.1;
-    color: #5e5e5e;
-    font-size: 35px;
-    text-align: center;
-    display: flex;
-    justify-content: start;
-    margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #5e5e5e;
+  font-size: 35px;
+  margin-bottom: 30px;
+  display: inline-block;
 }
+
 .froom_title h2{
-    padding: 10px 20px;
-    border-bottom: 4px solid #fd7e14;
-    border-radius: 15px;
+  padding: 10px 20px;
+  border-bottom: 4px solid #fd7e14;
+  border-radius: 10px;
+  border-bottom: 4px solid transparent;
+  animation: borderChange 4s infinite alternate;
+  
 }
+@keyframes borderChange {
+  0% {
+      border-color: #FF5733; 
+  }
+  50% {
+      border-color: #33FF57; 
+  }
+  100% {
+      border-color: #FF5733; 
+  }
+}
+
+
 .specialOffers{
     display: flex;
     justify-content: center;
