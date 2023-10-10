@@ -43,8 +43,8 @@ const Footer = () => {
                     <div>
                         <Image
                             src={himage2}
-                            width={150}
-                            height={150}
+                            width={100}
+                            height={100}
                             alt="Picture of the author"
                             className={styles.gphoto}
                         />

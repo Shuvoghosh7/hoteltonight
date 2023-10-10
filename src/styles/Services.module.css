@@ -13,23 +13,24 @@
 }
 .services_container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    grid-template-columns: 66% 30%;
+    gap: 50px;
 }
 
-.services_container .slider_container {
+/* .services_container .slider_container {
     grid-column: span 8;
 }
 
 .services_container .counter_main {
     grid-column: span 4;
-}
+} */
 
 .counter_item_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 60px;
     grid-column-gap: 20px;
+    
 }
 .CountUp{
     color: #c9c9c9;
@@ -42,8 +43,10 @@
     background: #353535;
     color: white;
     text-align: center;
-    padding: 36.2px 20px;
+    padding: 25px 20px;
     border-radius: 3px;
+    box-sizing: border-box;
+    width: 171px;
 }
 .counter_item h3{
     color: #c9c9c9;
@@ -78,16 +81,8 @@
 
     .services_container {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: 100%;
         gap: 20px;
-    }
-
-    .services_container .slider_container {
-        grid-column: span 12;
-    }
-
-    .services_container .counter_main {
-        grid-column: span 12;
     }
 
     .slider_image {
@@ -101,7 +96,9 @@
         gap: 20px;
     }
     .counter_item {
-        padding:20px;
+        padding:30px 20px;
+        width: 100%;
+        height: auto;
     }
    
 }
@@ -111,4 +108,5 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
+
 }

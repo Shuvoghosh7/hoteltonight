@@ -5,9 +5,9 @@ import Restaurant from "./Restaurant";
 import Spa from "./Spa";
 const UpsHome = () => {
     return (
-        <div className="">
-            <div className={styles.froom_title}>
-                <h2>USP section</h2>
+        <div>
+             <div className={styles.froom_title}>
+                <h2>OUR SERVICES INCLUDED</h2>
             </div>
             <div className={styles.ups_container}>
                 <Beverages />

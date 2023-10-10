@@ -35,29 +35,58 @@
 
 /* Text overlay styles */
 .overlay {
-    position: absolute;
-    top: 40%;
+    /* position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: #fd7e14; */
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    /* text-align: left; */ /* You can add this if needed */
+    color: #fd7e14;
 }
 
 .overlay h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .overlay p {
     font-size: 1.5rem;
+    background: #fd7e14;
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background 1s ease-in-out;
+    cursor: pointer;
 }
 
+.overlay p:hover{
+    background-color:#085078;
+}
 .banner_form{
     margin-top: -205px;
 }
 
 
 @media (max-width: 768px) {
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+        color: #fd7e14;
+    }
+    .overlay h1 {
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
     .commonSlider p {
         font-size: 12px;
         display: flex;

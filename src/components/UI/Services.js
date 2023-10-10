@@ -25,9 +25,9 @@ const Services = () => {
     });
     return (
         <div>
-            <div className={styles.froom_title}>
+            {/* <div className={styles.froom_title}>
                 <h2>SERVICES</h2>
-            </div>
+            </div> */}
             <div className={styles.services_container}>
                 <div className={styles.slider_container}>
                     <Swiper
@@ -47,7 +47,7 @@ const Services = () => {
                             <Image
                                 src={gym}
                                 width={400}
-                                height={200}
+                                height={400}
                                 alt="Picture of the author"
                                 className={styles.slider_image}
 

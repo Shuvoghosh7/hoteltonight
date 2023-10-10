@@ -31,28 +31,28 @@ export default function Home() {
       <section className={styles.banner_form}>
         <BannerForm/>
       </section>
-      <div className="mt-12 mx-32">
+      <div className="lg:mt-24 mt-12 lg:mx-32 mx-5">
         <FavoriteRooms />
       </div>
-      <div className="mt-12  mx-32">
+      <div className="lg:mt-24 mt-12  lg:mx-32 mx-10">
         <UpsHome />
       </div>
-      <div className="mt-12  mx-32">
+      <div className="lg:mt-24 mt-12  lg:mx-32 mx-10">
         <Services />
       </div>
-      <div className="mt-16  lg:mx-32 mx-5">
+      <div className="lg:mt-24 mt-12  lg:mx-32 mx-5">
         <SpecialOffers />
       </div>
-      <div className="mt-16  lg:mx-32 mx-5">
+      <div className="lg:mt-24 mt-12  lg:mx-32 mx-5">
         <PhotoGrally />
       </div>
-      <div className="mt-16">
+      <div className="lg:mt-24 mt-12">
         <Testimonial />
       </div>
-      <div className="mt-16  lg:mx-32 mx-5">
+      <div className="lg:mt-24 mt-12  lg:mx-32 mx-5">
         <LatestNews />
       </div>
-      <div className="mt-16">
+      <div className="lg:mt-24 mt-12">
         <SpaService />
       </div>
       

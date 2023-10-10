@@ -3,7 +3,7 @@
   line-height: 1.1;
   color: #5e5e5e;
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: inline-block;
 }
 
@@ -70,7 +70,7 @@
 .offer_item .offer_price {
     position: absolute;
     top: 20px;
-    left: 373px;
+    left: 346px;
     padding: 5px 20px;
     border-radius: 2px;
     background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));

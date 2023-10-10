@@ -3,12 +3,19 @@ import styles from "@/styles/Navbar.module.css";
 import Link from "next/link";
 import himage from "../../assets/images/Logo/logo2.png";
 import Image from "next/image";
+import { ImMenu } from 'react-icons/im';
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+    const toggleMenuList = () => {
+        setTimeout(() => {
+            setMenuOpen(false);
+          }, 500); 
+    };
+   
 
     useEffect(() => {
         const navbar = document.querySelector(`.${styles.navbar}`);
@@ -41,12 +48,12 @@ const Navbar = () => {
                 </Link>
             </div>
             <button className={styles.menuButton} onClick={toggleMenu}>
-                Menu
+                <ImMenu/>
             </button>
             <div className={`${styles['nav-menu']} ${menuOpen ? styles.active : ''}`}>
                 <ul>
-                    <li>
-                        <Link href="/">
+                    <li onClick={toggleMenuList}>
+                        <Link href="/" >
                             Home
                         </Link>
                     </li>
@@ -63,9 +70,10 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link href="/about">
-                            Gallery
+                            Contact
                         </Link>
                     </li>
+                   
                     <li className={styles.nav_book_btn}>
                         <Link href="/about">
                             BOOK ONLINE

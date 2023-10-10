@@ -5,14 +5,17 @@ import Image from "next/image";
 import All from "./Gallery/All";
 
 const PhotoGrally = () => {
-  const [activeTab, setActiveTab] = useState('All');
+    const [activeTab, setActiveTab] = useState('All');
     const handleTabClick = (tabId) => {
         setActiveTab(tabId);
     };
-  return (
-    <div className="mt-8">
+    return (
+        <div className="mt-8">
+            <div className={styles.section_title}>
+                <h2>GALLERY</h2>
+            </div>
 
-            <ul className={`${styles.nav} ${styles.nav_tabs}`}>
+            <ul className={`${styles.nav} ${styles.nav_tabs} `}>
                 <li onClick={() => handleTabClick('All')} className={activeTab === 'All' ? styles.active : ''}> All</li>
                 <li onClick={() => handleTabClick('HOTEL_GROUND')} className={activeTab === 'HOTEL_GROUND' ? styles.active : ''}>HOTEL & GROUND</li>
                 <li onClick={() => handleTabClick('ROOM')} className={activeTab === 'ROOM' ? styles.active : ''}>ROOM/SUITE </li>
@@ -23,7 +26,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "All" &&
                     <div>
-                       <All/>
+                        <All />
                     </div>
                 }
             </div>
@@ -31,7 +34,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "HOTEL_GROUND" &&
                     <div className="mx-20">
-                       HOTEL_GROUND
+                        HOTEL_GROUND
                     </div>
                 }
             </div>
@@ -47,7 +50,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "BATHROOM" &&
                     <div className="mx-20">
-                       BATHROOM
+                        BATHROOM
                     </div>
                 }
             </div>
@@ -55,7 +58,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "DINING" &&
                     <div className="mx-20">
-                       DINING
+                        DINING
                     </div>
                 }
             </div>
@@ -63,7 +66,7 @@ const PhotoGrally = () => {
 
         </div>
 
-  )
+    )
 };
 
 export default PhotoGrally;

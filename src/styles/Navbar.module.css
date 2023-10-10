@@ -43,15 +43,16 @@
   color: #fd7e14;
   font-size: 1.5rem;
   text-decoration: none;
-
 }
-
+/* .gphoto{
+  margin-top: -12px;
+} */
 .nav-menu ul {
   list-style: none;
   display: flex;
   align-items: center;
-
 }
+
 
 .nav-menu li {
   margin: 0 1rem;
@@ -110,7 +111,9 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    line-height: 35px;
   }
+
 
   .nav-menu li {
     margin: 0;
@@ -121,14 +124,14 @@
   .menuButton {
     display: block;
     position: absolute;
-    top: 1rem;
     right: 1rem;
-    background-color: #990808;
-    color: #fff;
+    color: #fd7e14;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
     cursor: pointer;
     z-index: 1000;
+    font-size: 30px;
+  
   }
 
   .nav-menu {
@@ -146,6 +149,7 @@
 
   .nav-menu.active {
     display: block;
-
+    height: 100vh;
   }
+ 
 }

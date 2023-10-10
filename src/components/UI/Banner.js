@@ -16,7 +16,7 @@ const Banner = () => {
           Your browser does not support the video tag.
         </video>
         <div className={styles.overlay}>    
-          <h1>A Five Star Hotel And we like to keep it that way! </h1>
+          <h1>Check-in to relaxation <br/> check-out with satisfaction</h1>
           <p>
             <Link href="/roomList">See rooms</Link>
           </p>
