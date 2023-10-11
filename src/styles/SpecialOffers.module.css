@@ -8,12 +8,7 @@
 }
 
 .froom_title h2{
-  padding: 10px 20px;
-  border-bottom: 4px solid #fd7e14;
-  border-radius: 10px;
-  border-bottom: 4px solid transparent;
-  animation: borderChange 4s infinite alternate;
-  
+  padding: 10px 0px; 
 }
 @keyframes borderChange {
   0% {

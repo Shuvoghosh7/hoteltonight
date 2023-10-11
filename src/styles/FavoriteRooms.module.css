@@ -1,18 +1,19 @@
-.froom_title {
+.favorite_title{
     font-weight: 600;
     line-height: 1.1;
     color: #5e5e5e;
     font-size: 35px;
     margin-bottom: 50px;
     display: inline-block;
+    background-image: url('../assets/images/Logo/title_bg.png');
+    background-position: right  43px top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 470px;
 }
-
-.froom_title h2 {
-    padding: 10px 20px;
-    border-bottom: 4px solid #fd7e14;
-    border-radius: 15px;
+.favorite_title h2 {
+    padding: 10px 0px;
 }
-
 .favorit_room_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

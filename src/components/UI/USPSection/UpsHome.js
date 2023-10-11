@@ -6,7 +6,7 @@ import Spa from "./Spa";
 const UpsHome = () => {
     return (
         <div>
-             <div className={styles.froom_title}>
+             <div className={styles.ups_title}>
                 <h2>OUR SERVICES INCLUDED</h2>
             </div>
             <div className={styles.ups_container}>

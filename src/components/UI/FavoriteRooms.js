@@ -8,7 +8,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 const FavoriteRooms = () => {
   return (
     <div>
-      <div className={styles.froom_title}>
+      <div className={styles.favorite_title}>
         <h2>Guests Favorite Rooms</h2>
       </div>
 

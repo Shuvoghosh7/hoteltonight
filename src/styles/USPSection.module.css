@@ -1,4 +1,4 @@
-.froom_title{
+.ups_title{
   font-weight: 600;
   line-height: 1.1;
   color: #5e5e5e;
@@ -7,12 +7,9 @@
   display: inline-block;
   
 }
-.froom_title h2{
-  padding: 10px 20px;
-  border-bottom: 4px solid #fd7e14;
-  border-radius: 15px;
+.ups_title h2 {
+  padding: 10px 0px;
 }
-
 
 
   .ups_container{
