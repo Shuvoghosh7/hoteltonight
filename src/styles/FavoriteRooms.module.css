@@ -5,11 +5,7 @@
     font-size: 35px;
     margin-bottom: 50px;
     display: inline-block;
-    background-image: url('../assets/images/Logo/title_bg.png');
-    background-position: right  43px top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 470px;
+    
 }
 .favorite_title h2 {
     padding: 10px 0px;
@@ -142,11 +138,33 @@
 
     .room_thumb .hoverMask {
         height: auto;
-        /* or any other value you want for small devices */
+        opacity: 1;
+        visibility: visible;
     }
 
     .btn_block {
         margin-bottom: 20px;
     }
 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .favorit_room_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .hoverMask {
+        position: static;
+    }
+
+    .room_thumb .hoverMask {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+    }
+    .btn_block {
+        margin-bottom: 10px;
+    
+    }
 }

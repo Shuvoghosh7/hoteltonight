@@ -49,7 +49,7 @@
 .awe_calendar_wrapper .awe_calendar {
     padding: 0 10px 0 5px;
     background-color: transparent;
-    width: 200px;
+    width: 165px;
     border: 2px solid #fff;
     height: 53px;
     color: #fff;
@@ -60,7 +60,7 @@
 .awe_member {
     padding: 0 10px 0 5px;
     background-color: transparent;
-    width: 100px;
+    width: 84px;
     border: 2px solid #fff;
     height: 53px;
     color: #fff;
@@ -129,4 +129,38 @@
     .row h2{
         margin-right: 5px;
     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .check_availability {
+        height: 100%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .availability_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        gap: 10px;
+    }
+    .awe_member {
+        width: 400px;
+    }
+    .book_btn {
+      margin-bottom: 20px;
+      width: 400px;
+    }
+    .awe_calendar_wrapper .awe_calendar {
+        width: 400px;
+    }
+    .row h2{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    
 }

@@ -153,7 +153,7 @@ const roomDetailPage = () => {
             <section className={styles.room_facality_container}>
 
                 <div className={styles.room_facality}>
-                    <h2 className={styles.room_facality_heading}><span>Room Details</span></h2>
+                    <h2 className={`${styles.room_facality_heading} lg:mt-2 mt-7`}><span>Room Details</span></h2>
 
                     <div className={styles.facality_list}>
                         <p className="flex items-center">      
@@ -199,7 +199,7 @@ const roomDetailPage = () => {
                 </div>
 
                 <div>
-                    <h2 className={styles.room_facality_heading}><span>Overview</span></h2>
+                    <h2 className={`${styles.room_facality_heading} lg:mb-2 md:my-2 mb-5`}><span>Overview</span></h2>
                     <ul className={`${styles.nav} ${styles.nav_tabs}`}>
                         <li onClick={() => handleTabClick('overview')} className={activeTab === 'overview' ? styles.active : ''}> Overview</li>
                         <li onClick={() => handleTabClick('facilities')} className={activeTab === 'facilities' ? styles.active : ''}> Facilities</li>

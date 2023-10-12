@@ -39,8 +39,8 @@ const Footer = () => {
 
             <div className={styles.footer_body_container}>
                 {/* Address  */}
-                <div className="flex justify-between items-center">
-                    <div>
+                <div className="lg:flex justify-between items-center">
+                    <div className={styles.image_container}>
                         <Image
                             src={himage2}
                             width={100}
@@ -50,9 +50,11 @@ const Footer = () => {
                         />
                     </div>
                     <div className={styles.icon_container}>
-                        <p className="flex items-center"><span className={styles.footer_icon}> <MdLocationPin /></span> <span className="ml-3">225 Beach Street, Australian</span></p>
-                        <p className="flex items-center"><span className={styles.footer_icon}> <BsTelephoneFill /></span> <span className="ml-3"> 1-548-854-8898</span></p>
-                        <p className="flex items-center"><span className={styles.footer_icon}> <MdEmail /></span> <span className="ml-3">hello@thelotushotel.com</span></p>
+                        <div>
+                            <p className="flex items-center"><span className={styles.footer_icon}> <MdLocationPin /></span> <span className="ml-3">225 Beach Street, Australian</span></p>
+                            <p className="flex items-center"><span className={styles.footer_icon}> <BsTelephoneFill /></span> <span className="ml-3"> 1-548-854-8898</span></p>
+                            <p className="flex items-center"><span className={styles.footer_icon}> <MdEmail /></span> <span className="ml-3">hello@thelotushotel.com</span></p>
+                        </div>
                     </div>
                 </div>
 
@@ -84,7 +86,7 @@ const Footer = () => {
                             <li>Private balcony</li>
                             <li>Sea view</li>
                             <li>Free Wi-Fi</li>
-                            
+
                         </ul>
                     </div>
                 </div>
