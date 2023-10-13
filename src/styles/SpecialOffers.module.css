@@ -222,3 +222,31 @@
   
   
   }
+
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    .specialOffers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+  }
+
+  .offer_item .offer_title {
+    font-size: 14px;
+    left: 20px;
+  
+  }
+  .offer_item .offer_price {
+      position: absolute;
+      top: 0px;
+      left: 406px;
+      padding: 5px 20px;
+      border-radius: 2px;
+      background: linear-gradient(45deg, rgb(240, 100, 150), rgb(140, 200, 208));
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+   
+  }
+  }

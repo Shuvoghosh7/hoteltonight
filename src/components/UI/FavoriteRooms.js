@@ -10,6 +10,7 @@ const FavoriteRooms = () => {
     <div>
       <div className={styles.favorite_title}>
         <h2>Guests Favorite Rooms</h2>
+        
       </div>
 
       <div className={styles.favorit_room_container}>

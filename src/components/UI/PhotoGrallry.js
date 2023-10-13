@@ -13,6 +13,8 @@ const PhotoGrally = () => {
         <div className="mt-8">
             <div className={styles.section_title}>
                 <h2>GALLERY</h2>
+                
+
             </div>
 
             <ul className={`${styles.nav} ${styles.nav_tabs} `}>
