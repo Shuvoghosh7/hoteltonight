@@ -27,14 +27,14 @@ const Navmenu = () => {
         <div>
             <ul className={styles.menu}>
 
-                <li title="home"><Link href="#" className={styles.home}
+                <li title="home"><Link href="/admin/dashboard" className={styles.home}
                     onClick={toggleMenu}
                     onMouseEnter={handleMenuButtonHover}>
                     <AiOutlineMenu className={styles.menu_icon} />
                 </Link></li>
                 <hr></hr>
 
-                <li title="search" ><Link href="#"  className={styles.search}
+                <li title="search" ><Link href="/admin/dashboard"  className={styles.search}
                     onClick={toggleMenu}
                     onMouseEnter={handleMenuButtonHover}>
                     <FaTachometerAlt className={styles.menu_icon} />
@@ -67,12 +67,12 @@ const Navmenu = () => {
 
             <ul className={`${styles.menubar} ${isMenuOpen ? `${styles.open}` : ''}`}>
                 <li>
-                    <Link href="/" className="menu-button" onClick={toggleMenu}>
+                    <Link href="/admin/dashboard" className="menu-button" onClick={toggleMenu}>
                     Hoteltonight
                     </Link>
                 </li>
                 <hr></hr>
-                <li><Link href="/" onClick={toggleMenu}>Dashboard</Link></li>
+                <li><Link href="/admin/dashboard" onClick={toggleMenu}>Dashboard</Link></li>
                 <li><Link href="/tests" onClick={toggleMenu}>Booking</Link></li>
                 <li><Link href="#" onClick={toggleMenu}>Customers</Link></li>
                 <li><Link href="#" onClick={toggleMenu}>Rooms</Link></li>

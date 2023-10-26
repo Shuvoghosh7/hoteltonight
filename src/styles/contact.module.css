@@ -124,7 +124,7 @@
     outline: none;
 }
 
-.quick_communication{
+.quick_communication {
     border-radius: 20px 20px 20px 20px;
     background-color: white;
     box-shadow: 1px 5px 26px 7px rgba(138, 138, 138, .08);
@@ -133,44 +133,100 @@
 
 }
 
-.quick_communication_content{
+.quick_communication_content {
     margin: 0px 158px;
     display: flex;
     align-items: center;
     padding: 30px 0;
 }
-.quick_communication_content h3{
+
+.quick_communication_content h3 {
     color: #333;
     line-height: 2em;
     font-weight: 800;
     font-size: 21px;
 }
-.quick_communication_content h4{
+
+.quick_communication_content h4 {
     color: #333;
     line-height: 1em;
     font-weight: 500;
     font-size: 18px;
 }
-.communication_way{
+
+.communication_way {
     padding: 20px 80px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.blurb_texts h5{
+
+.blurb_texts h5 {
     color: #333;
     line-height: 2em;
     font-weight: 700;
     font-size: 18px;
     margin-top: 5px;
 }
-.blurb_texts p{
+
+.blurb_texts p {
     color: #333;
     line-height: 1em;
     font-weight: 500;
     font-size: 17px;
     margin-top: 5px;
+}
+
+.office_location h3 {
+    color: #2A2A2A;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46.5px;
+    margin-top: 70px;
+}
+
+.office_location_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    height: 280px;
+}
+
+.office_location_contain {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 18px 30px 0px rgba(131, 119, 198, 0.10);
+    margin-top: 30px;
+    padding: 20px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.Client_Support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+}
+
+.office_location_contain h4 {
+    color: #0072DD;
+    font-size: 24px;
+    font-weight: 800;
+
+}
+
+.office_location_contain p {
+    color: #2C2C2C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31.5px;
 }
 
 @media (max-width: 768px) {
@@ -183,7 +239,8 @@
     .gphoto {
         margin-top: 50px;
     }
-    .quick_communication_content{
+
+    .quick_communication_content {
         margin: 0px 18px;
         display: flex;
         flex-direction: column;
@@ -191,16 +248,62 @@
         justify-content: start;
         padding: 30px 0;
     }
-    .communication_way{
-        padding: 20px 30px;
+
+    .communication_way {
+        padding: 20px 10px;
         padding-bottom: 20px;
         display: flex;
         flex-direction: column;
+        justify-content:center;
         align-items: center;
     }
-    .call{
+
+    .call {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    
+    .office_location_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        height: 100%;
+        
+    }
+    .office_location_contain {
+        position: relative;
+    }
+    
+    .Client_Support {
+     
+        position: relative;
+        top: 5px;
+        
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .communication_way {
+        padding: 20px 30px;
+        
+    }
+    .office_location_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        height: 345px;
+        
+    }
+    .office_location_contain {
+        position: relative;
+    }
+    
+    .Client_Support {
+     
+        position: absolute;
+        top: 225px;
+        
     }
 }

@@ -151,6 +151,75 @@ const contact = () => {
                 </div>
 
             </div>
+
+            {/* Our Office Location */}
+            <div className={styles.office_location}>
+                <h3>Our Office Location</h3>
+
+                <div className={styles.office_location_container}>
+                    {/* location-1 */}
+                    <div className={styles.office_location_contain}>
+                        <h4>United States</h4>
+                        <p>(Client Support)</p>
+                        <p>40-49 71st St, Woodside <br /> NewYork, NY 11377</p>
+                        <div className={styles.Client_Support}>
+                            <Image
+                                src={call}
+                                width={40}
+                                height={40}
+                                alt="Picture of the author"
+
+                            />
+                            <a href="tel:+13156364807" className="ml-2">
+                                <p>+8801772385111</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    {/* location-2 */}
+                    <div className={styles.office_location_contain}>
+                        <h4>Bangladesh</h4>
+                        <p>(Client Support)</p>
+                        <p>Head Office (Main production team)
+                            House No. 1/5, Block-D, Lalmatia, Dhaka-1207</p>
+                        <div className={styles.Client_Support}>
+                            <Image
+                                src={call}
+                                width={40}
+                                height={40}
+                                alt="Picture of the author"
+
+                            />
+                            <a href="tel:+13156364807" className="ml-2">
+                                <p>+8801772385111</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    {/* location-3 */}
+                    <div className={styles.office_location_contain}>
+                        <h4>India</h4>
+                        <p>(Client Support)</p>
+                        <p>(Partial Production team )
+                            214/A,Sonarpur, kolkata 700150,West Bengal,24 pgs(south) India
+                        </p>
+                        <div className={styles.Client_Support}>
+                            <Image
+                                src={call}
+                                width={40}
+                                height={40}
+                                alt="Picture of the author"
+
+                            />
+                            <a href="tel:+13156364807" className="ml-2 text-xm">
+                                <p>+8801772385111</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 };
