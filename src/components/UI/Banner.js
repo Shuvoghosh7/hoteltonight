@@ -17,7 +17,7 @@ const Banner = () => {
         </video>
         <div className={styles.overlay}>    
           <h1>Check-in to relaxation <br/> check-out with satisfaction</h1>
-          <p>
+          <p className={styles.submit_btn}>
             <Link href="/roomList">See rooms</Link>
           </p>
         </div>

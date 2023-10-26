@@ -55,24 +55,43 @@
     font-weight: bold;
 }
 
-.overlay p {
-    font-size: 1.5rem;
-    background: #fd7e14;
-    color: white;
-    display: inline-block;
-    padding: 5px 20px;
-    border-radius: 10px;
-    transition: background 1s ease-in-out;
-    cursor: pointer;
-}
 
-.overlay p:hover{
-    background-color:#085078;
-}
 .banner_form{
     margin-top: -205px;
 }
+.submit_btn{
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: #fd7e14;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 13px 0 1px;
+    cursor: pointer;
+    z-index: 1;
+}
+.submit_btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(0% at 50% 50%);
+    background: rgba(36, 36, 36, 0.3);
+    transition: clip-path 0.4s ease-out;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
 
+.submit_btn:hover:before {
+    clip-path: circle(100% at 50% 50%);
+    border-radius: 5px;
+}
 
 @media (max-width: 768px) {
     .overlay {

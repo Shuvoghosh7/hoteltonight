@@ -199,7 +199,7 @@
     outline: none;
 }
 
-.form_submit_btn input {
+/* .form_submit_btn input {
     background: #edcb9a;
     color: #fff;
     letter-spacing: 0.5px;
@@ -210,7 +210,7 @@
     padding: 10px 20px;
     transition: .5s;
     cursor: pointer;
-}
+} */
 .post_view_container{
     margin: 0 100px;
     display: flex;
@@ -277,6 +277,56 @@
 .Latest_Post_title:hover {
     color:#ffc107;
 }
+
+/* .form_submit_btn input {
+    background: #edcb9a;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: 10px 20px;
+    transition: .5s;
+    cursor: pointer;
+} */
+
+
+
+.form_submit_btn{
+    position: relative;
+    color: #fff;
+    background-color:#0072DD;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.form_submit_btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(0% at 50% 50%);
+    background: rgba(36, 36, 36, 0.3);
+    transition: clip-path 0.4s ease-out;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.form_submit_btn:hover {
+    clip-path: circle(100% at 50% 50%);
+    border-radius: 5px;
+}
+
 
 @media (max-width: 768px) {
     .letest_news_container{

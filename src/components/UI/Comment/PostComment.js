@@ -17,8 +17,8 @@ const PostComment = () => {
                     <textarea className={styles.form_control_textarea} placeholder="Write Your Comment"></textarea>
                 </div>
 
-                <div className={styles.form_submit_btn}>
-                    <input type="submit" value="POST YOUR COMMENT" />
+                <div>
+                    <input type="submit" value="POST YOUR COMMENT" className={styles.form_submit_btn}/>
                 </div>
             </form>
         </div>

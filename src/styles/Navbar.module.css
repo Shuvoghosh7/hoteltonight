@@ -32,12 +32,7 @@
   top: -100px;
 }
 
-.nav_book_btn {
-  padding: 10px 20px;
-  color: #fff;
-  background: #fd7e14;
-  border-radius: 5px;
-}
+
 
 .logo {
   color: #fd7e14;
@@ -98,6 +93,40 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.nav_book_btn{
+  position: relative;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: #fd7e14;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 13px 0 1px;
+  cursor: pointer;
+  z-index: 1;
+}
+.nav_book_btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  clip-path: circle(0% at 50% 50%);
+  background: rgba(36, 36, 36, 0.3);
+  transition: clip-path 0.4s ease-out;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.nav_book_btn:hover:before {
+  clip-path: circle(100% at 50% 50%);
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {

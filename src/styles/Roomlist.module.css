@@ -96,9 +96,17 @@
 .room_thumb:hover .hoverMask {
     height: 100%;
 }
-.btn_block{
+
+.gphoto{
+    width: 100%;
+}
+
+
+
+.btn_block {
+    position: relative;
     color: #fff;
-    background-color: #428bca;
+    background-color:#0072DD;
     display: inline-block;
     margin-top: 20px;
     font-size: 18px;
@@ -108,11 +116,31 @@
     border-radius: 4px;
     width: 100%;
     padding: 6px 10px;
-    
+    cursor: pointer;
+    z-index: 1;
 }
-.gphoto{
-    width: 100%;
+
+.btn_block:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(0% at 50% 50%);
+    background: rgba(36, 36, 36, 0.3);
+    transition: clip-path 0.4s ease-out;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
 }
+
+.btn_block:hover:before {
+    clip-path: circle(100% at 50% 50%);
+    border-radius: 4px;
+}
+
+
+
 
 @media (max-width: 768px) {
     .favorit_room_container{

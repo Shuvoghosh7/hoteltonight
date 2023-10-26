@@ -69,7 +69,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about">
+                        <Link href="/contact">
                             Contact
                         </Link>
                     </li>
