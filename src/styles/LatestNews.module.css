@@ -326,7 +326,20 @@
     clip-path: circle(100% at 50% 50%);
     border-radius: 5px;
 }
-
+.comment_reply_container{
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #efefef;
+    border-left: 5px;
+    border-left: 8px solid #efefef;
+    position: relative;
+    margin-left: 170px;
+    width: 680px;
+    padding: 7px 15px;
+}
+.post_reply_container{
+    margin: 0 100px;
+}
 
 @media (max-width: 768px) {
     .letest_news_container{
@@ -357,6 +370,11 @@
     .comment_container form{
         margin: 20px 35px;
     }
+    .comment_reply_container{
+        margin-left: 65px;
+        width: 100%;
+      
+    }
  
     
 }
@@ -368,4 +386,5 @@
         gap: 30px;
         
     }
+   
 }
