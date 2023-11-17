@@ -23,43 +23,36 @@ const Navbar = () => {
 
                     <div><IoIosNotifications className={styles.notification_icon} /></div>
 
-                    <div onClick={toggleMenu}>
-                        <Image
+                    <div className={styles.login_btn}>
+                        {/* <Image
                             src={blog1}
                             width={40}
                             height={40}
                             alt="Picture of the author"
                             className={styles.img_fluid}
-                        />
+                        /> */}
+                         <button type="submit">LOGIN</button>
                     </div>
                 </div>
 
                 {/* dropdown menu */}
-
+                {/* 
                 <div className={styles.nav_drop_container}>
                     <div className={`${styles.nav_drop_content} ${isOpen ? styles.nav_content_active : ''}`}>
-                        <div className="navbar-end">
-                            <div className="flex justify-between items-center px-2 pt-2">
-                                <Image
-                                    src={blog1}
-                                    width={40}
-                                    height={40}
-                                    alt="Picture of the author"
-                                    className={styles.img_fluid}
-                                />
-                                <div>
-                                    <h4>Shuvo Gosh</h4>
-                                    <small>Admin</small>
-                                </div>
-                            </div>
-                            <hr className="mt-3"></hr>
-                            <p className={styles.nav_profile_link}><Link href="#" className="px-2">My Profile</Link></p>
-                            <p className={styles.nav_profile_link}><Link href="#" className="px-2">Logout</Link></p>
+                        <div className={styles.navbar_end}>
+                            <form>
+                                <label for="fname">Email</label> <br></br>
+                                <input type="text" id="fname" name="fname"/>
+                                <label for="fname">Password</label> <br></br>
+                                <input type="password" id="fname" name="fname"/>
+                                <button type="submit">LOGIN</button>
+                            </form>
                             
-                            
+
+
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* dropdown menu end*/}
 
 
