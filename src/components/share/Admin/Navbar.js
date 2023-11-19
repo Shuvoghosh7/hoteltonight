@@ -5,12 +5,20 @@ import blog1 from "../../../assets/images/Logo/Logo/logo.png";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {  removeUserInfo } from "@/services/auth.service";
+import { useRouter } from "next/router";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const router = useRouter();
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+    
+    const logOut = () => {
+        removeUserInfo("accessToken");
+        router.push("/admin/login");
+      };
+    
     return (
         <div className={styles.nav_container}>
             <div>
@@ -31,7 +39,7 @@ const Navbar = () => {
                             alt="Picture of the author"
                             className={styles.img_fluid}
                         /> */}
-                         <button type="submit">LOGIN</button>
+                         <button onClick={logOut} type="submit">LOGIN</button>
                     </div>
                 </div>
 

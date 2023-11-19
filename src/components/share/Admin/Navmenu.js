@@ -16,9 +16,9 @@ const Navmenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
     const handleMenuButtonHover = () => {
-        if (!isMenuOpen) {
-            setIsMenuOpen(true);
-        }
+        // if (!isMenuOpen) {
+        //     setIsMenuOpen(true);
+        // }
     };
 
 
@@ -27,41 +27,14 @@ const Navmenu = () => {
         <div>
             <ul className={styles.menu}>
 
-                <li title="home"><Link href="/admin/dashboard" className={styles.home}
+                <li title="home" className={styles.home}
                     onClick={toggleMenu}
                     onMouseEnter={handleMenuButtonHover}>
                     <AiOutlineMenu className={styles.menu_icon} />
-                </Link></li>
-                <hr></hr>
+               </li>
+               
 
-                <li title="search" ><Link href="/admin/dashboard"  className={styles.search}
-                    onClick={toggleMenu}
-                    onMouseEnter={handleMenuButtonHover}>
-                    <FaTachometerAlt className={styles.menu_icon} />
-                </Link>
-                </li>
-                <li title="search" ><Link href="/#"  className={styles.search}
-                    onClick={toggleMenu}
-                    onMouseEnter={handleMenuButtonHover}>
-                    <FaSuitcase className={styles.menu_icon} />
-                </Link>
-                </li>
-                <li title="pencil"><Link href="#" className={styles.pencil}
-                    onClick={toggleMenu}
-                    onMouseEnter={handleMenuButtonHover}>
-                     <FaUserAlt className={styles.menu_icon} />
-                </Link></li>
-                <li title="about"><Link href="#" className={styles.about}
-                    onClick={toggleMenu}
-                    onMouseEnter={handleMenuButtonHover}>
-                     <FaKey className={styles.menu_icon} />
-                </Link></li>
-                <li title="archive">
-                    <Link href="#" className={styles.archive}
-                        onClick={toggleMenu}
-                        onMouseEnter={handleMenuButtonHover}>
-                         <FaUserAlt className={styles.menu_icon} />
-                    </Link></li>
+               
 
             </ul>
 
@@ -71,7 +44,7 @@ const Navmenu = () => {
                     Hoteltonight
                     </Link>
                 </li>
-                <hr></hr>
+            
                 <li><Link href="/admin/dashboard" onClick={toggleMenu}>Dashboard</Link></li>
                 <li><Link href="/tests" onClick={toggleMenu}>Booking</Link></li>
                 <li><Link href="#" onClick={toggleMenu}>Customers</Link></li>
