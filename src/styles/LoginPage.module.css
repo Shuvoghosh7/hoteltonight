@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
 }
 
 .login_form{
@@ -10,6 +12,7 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px 50px;
     border-radius: 20px;
+    width: 500px;
 }
 .brand_title {
     margin-bottom: 20px;
@@ -19,15 +22,16 @@
     letter-spacing: 1px;
     text-align: center;
   }
-.login_form label{
+.form_input_label{
     color: white;
 }
-.login_form input {
+.login_form_input {
     margin-top: 10px;
     margin-bottom: 10px;
     background: #ecf0f3;
     padding: 10px;
     padding-left: 20px;
+    width: 100%;
     height: 50px;
     font-size: 14px;
     border-radius: 50px;
@@ -39,8 +43,10 @@
   .login_form button {
     color: white;
     margin-top: 20px;
+    margin-bottom: 15px;
     background: #1DA1F2;
-    padding: 7px 30px;
+    padding: 15px 35px;
+    width: 80%;
     cursor: pointer;
     font-weight: 900;
     transition: 0.5s;

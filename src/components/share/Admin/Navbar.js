@@ -39,7 +39,7 @@ const Navbar = () => {
                             alt="Picture of the author"
                             className={styles.img_fluid}
                         /> */}
-                         <button onClick={logOut} type="submit">LOGIN</button>
+                         <button onClick={logOut} type="submit">LOGOUT</button>
                     </div>
                 </div>
 
