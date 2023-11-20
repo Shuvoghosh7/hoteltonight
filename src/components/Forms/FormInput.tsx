@@ -11,6 +11,7 @@ const FormInput = ({
     placeholder,
     validation,
     label,
+    options
 }) => {
     const { control } = useFormContext();
 
@@ -23,16 +24,41 @@ const FormInput = ({
             <Controller
                 control={control}
                 name={name}
-                render={({ field }) =>
+                render={({ field }) => (
+                    type === "select" ? (
+                        <select
+                            {...field}
+                            value={value ? value : field.value}
+                            className={styles.login_form_input}
+                            
+                        >
+                            {options.map((option: any) => (
+                                <option key={option.value} value={option.value}>
+                                    {option.label}
+                                </option>
+                            ))}
+                        </select>
+                    ) : type === "textarea" ? (
+                        <textarea
+                            {...field}
+                            value={value ? value : field.value}
+                            className={styles.login_form_textarea}
+                            placeholder={placeholder}
+                        />
+                    ) : (
+                        <input
+                            type={type}
+                            size={size}
+                            placeholder={placeholder}
+                            {...field}
+                            value={value ? value : field.value}
+                            className={styles.login_form_input}
+                        />
+                    )
+                )
 
-                    <input
-                        type={type}
-                        size={size}
-                        placeholder={placeholder}
-                        {...field}
-                        value={value ? value : field.value}
-                        className={styles.login_form_input}
-                    />
+
+
 
                 }
             />

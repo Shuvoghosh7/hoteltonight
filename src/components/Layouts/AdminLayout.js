@@ -5,7 +5,7 @@ import { isLoggedIn } from "@/services/auth.service";
 import { useRouter } from "next/router";
 
 
-const RootLayout = ({children}) => {
+const AdminLayout = ({children}) => {
     const userLoggedIn = isLoggedIn();
     const router = useRouter();
     const [isLoading, setIsLoading] = useState(true);
@@ -32,4 +32,4 @@ const RootLayout = ({children}) => {
     )
 };
 
-export default RootLayout;
+export default AdminLayout;

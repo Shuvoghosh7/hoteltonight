@@ -46,10 +46,10 @@ const Navmenu = () => {
                 </li>
             
                 <li><Link href="/admin/dashboard" onClick={toggleMenu}>Dashboard</Link></li>
-                <li><Link href="/tests" onClick={toggleMenu}>Booking</Link></li>
+                <li><Link href="/admin/createRoom" onClick={toggleMenu}>Create Room</Link></li>
                 <li><Link href="#" onClick={toggleMenu}>Customers</Link></li>
-                <li><Link href="#" onClick={toggleMenu}>Rooms</Link></li>
-                <li><Link href="#" onClick={toggleMenu}>Employees</Link></li>
+                <li><Link href="#" onClick={toggleMenu}>Reservation</Link></li>
+                <li><Link href="#" onClick={toggleMenu}>Create Blog</Link></li>
             </ul>
 
         </div>
