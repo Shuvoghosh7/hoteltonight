@@ -1,63 +1,88 @@
-import React from "react"
-import Form from "@/components/Forms/Form";
+import React, { useState } from "react"
 import styles from "@/styles/LoginPage.module.css";
-import FormInput from "@/components/Forms/FormInput";
-import { SubmitHandler } from "react-hook-form";
-import { useUserLoginMutation } from "@/redux/api/authApi";
-import { useRouter } from "next/router";
-import { storeUserInfo } from "@/services/auth.service";
 import AdminLayout from "@/components/Layouts/AdminLayout";
-
+import { Controller, useForm } from "react-hook-form";
+import Select from 'react-select';
 const CreateRoom = () => {
+    const { handleSubmit, control, register } = useForm();
+
+    const onSubmit = (data) => {
+
+        try {
+            console.log(data);
+
+          } catch (err) {
+            console.error(err.message);
+          }
+    };
     return (
         <div className="mt-12">
             <div className={styles.login_container}>
-                <Form>
-                    <h4 className={styles.brand_title}>Admin Login</h4>
+                <form onSubmit={handleSubmit(onSubmit)} className={styles.login_form}>
                     <div>
-                        <FormInput name="RoomNumber" type="text" label="RoomNumber" />
+                        <label className={styles.form_input_label}>Room Number:</label><br></br>
+                        <input {...register("RoomNumber")} className={styles.login_form_input} />
                     </div>
 
                     <div>
-                        <FormInput
+                        <label className={styles.form_input_label}>Room Type:</label><br></br>
+                        <Controller
                             name="RoomType"
-                            type="select"
-                            label="Select Room"
-                            options={[
-                                { label: "Single", value: "Single" },
-                                { label: "Double", value: "Double" },
-                                { label: "Deluxe", value: "Deluxe" },
+                            control={control}
+                            defaultValue={[]}
+                            render={({ field }) => (
+                                <select {...field} className={styles.login_form_input}>
+                                     <option value="option">Select a option...</option>
+                                    <option value="Single">Single</option>
+                                    <option value="TV">TV</option>
+                                    <option value="Air Conditioning">Air Conditioning</option>
+                                </select>
+                            )}
+                        />
+                    </div>
 
-                            ]}
-                        />
-                    </div>
                     <div>
-                        <FormInput name="PricePerNight" type="number" label="Price Per Night" />
+                        <label className={styles.form_input_label}>Price Per Night:</label><br></br>
+                        <input type="number" {...register("PricePerNight")} className={styles.login_form_input} />
                     </div>
+
                     <div>
-                        <FormInput name="Description" type="textarea" label="Price Per Night" />
+                        <label className={styles.form_input_label}>Description:</label><br></br>
+                        <textarea {...register("Description")}  className={styles.login_form_textarea} />
                     </div>
+
                     <div>
-                        <FormInput
+                        <label className={styles.form_input_label}>Capacity:</label><br></br>
+                        <input type="number" {...register("Capacity")} className={styles.login_form_input} />
+                    </div>
+
+                    <div>
+                        <label className={styles.form_input_label}>Facilities:</label><br></br>
+                        <Controller
+
                             name="Facilities"
-                            type="select"
-                            label="Facilities"
-                            options={[
-                                { label: "Wi-Fi", value: "wifi" },
-                                { label: "TV", value: "tv" },
-                                { label: "Air Conditioning", value: "ac" },
-                               
-                            ]}
+                            control={control}
+                            defaultValue={[]}
+                            render={({ field }) => (
+                                <Select
+                                    {...field}
+                                    isMulti
+                                    options={[
+                                        { value: 'Wi-Fi', label: 'Wi-Fi' },
+                                        { value: 'TV', label: 'TV' },
+                                        { value: 'Air Conditioning', label: 'Air Conditioning' },
+                                    ]}
+                                />
+                            )}
                         />
+
                     </div>
                     <div className="flex justify-center">
                         <button type="primary" >
-                            Login
+                            Submit
                         </button>
                     </div>
-
-                </Form>
-
+                </form>
             </div>
 
         </div>
