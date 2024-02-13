@@ -23,7 +23,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import img1 from "../../assets/images/roomDetails/restaurant-01.jpg"
 import Head from "next/head";
 import { AiFillCheckCircle } from "react-icons/ai";
-const roomDetailPage = () => {
+const RoomDetailPage = () => {
     const [activeTab, setActiveTab] = useState('overview');
 
     const handleTabClick = (tabId) => {
@@ -264,9 +264,9 @@ const roomDetailPage = () => {
     )
 };
 
-export default roomDetailPage;
+export default RoomDetailPage;
 
-roomDetailPage.getLayout = function getLayout(page) {
+RoomDetailPage.getLayout = function getLayout(page) {
     return <RootLayout>{page}</RootLayout>;
 };
 
