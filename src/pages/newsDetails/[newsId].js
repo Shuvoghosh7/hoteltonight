@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react"
 import styles from "@/styles/LatestNews.module.css";
 import blog1 from "../../assets/images/LN/blog-post1.jpg";
