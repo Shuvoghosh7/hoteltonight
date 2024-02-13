@@ -18,7 +18,7 @@ const AdminLayout = ({children}) => {
         setIsLoading(true);
       }
       
-    }, [router, isLoading]);
+    }, [router, isLoading,userLoggedIn]);
   
     if (!isLoading) {
       return <p>Loading......</p>;

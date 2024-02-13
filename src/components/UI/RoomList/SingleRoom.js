@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react"
 import styles from "@/styles/Roomlist.module.css";
 import Link from "next/link";
+import RootLayout from "@/components/Layouts/RootLayout";
 const SingleRoom = () => {
   return (
     <div className="mt-8">
