@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react"
 import styles from "@/styles/roomDetailPage.module.css";
 import RootLayout from "@/components/Layouts/RootLayout";
