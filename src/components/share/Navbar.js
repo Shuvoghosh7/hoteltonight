@@ -75,7 +75,7 @@ const Navbar = () => {
                     </li>
                    
                     <li className={styles.nav_book_btn}>
-                        <Link href="/about">
+                        <Link href="/roomList">
                             BOOK ONLINE
                         </Link>
                     </li>

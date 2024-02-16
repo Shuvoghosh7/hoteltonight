@@ -3,6 +3,10 @@ import React, { useEffect, useState } from "react"
 import styles from "@/styles/PhotoGrally.module.css";
 import Image from "next/image";
 import All from "./Gallery/All";
+import HOTELGROUND from "./Gallery/HOTELGROUND";
+import ROOMSUITE from "./Gallery/ROOMSUITE";
+import BATHROOM from "./Gallery/BATHROOM";
+import DINING from "./Gallery/DINING";
 
 const PhotoGrally = () => {
     const [activeTab, setActiveTab] = useState('All');
@@ -36,7 +40,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "HOTEL_GROUND" &&
                     <div className="mx-20">
-                        HOTEL_GROUND
+                        <HOTELGROUND/>
                     </div>
                 }
             </div>
@@ -44,7 +48,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "ROOM" &&
                     <div className="mx-20">
-                        ROOM
+                        <ROOMSUITE/>
                     </div>
                 }
             </div>
@@ -52,7 +56,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "BATHROOM" &&
                     <div className="mx-20">
-                        BATHROOM
+                        <BATHROOM/>
                     </div>
                 }
             </div>
@@ -60,7 +64,7 @@ const PhotoGrally = () => {
                 {
                     activeTab === "DINING" &&
                     <div className="mx-20">
-                        DINING
+                        <DINING/>
                     </div>
                 }
             </div>

@@ -7,46 +7,26 @@ import SWIMPOOLS from "../../../assets/images/services/SWIM. POOLS.png";
 import playground from "../../../assets/images/services/playground.jpg";
 import Image from "next/image";
 
-const All = () => {
+const BATHROOM = () => {
     const [selectedImage, setSelectedImage] = useState(null);
     const openImage = (imageSrc) => {
         setSelectedImage(imageSrc);
-      };
+    };
     return (
         <div className={styles.all_image_container}>
-            <div className={styles.gimage} onClick={() => openImage(gym)}>
-                <Image
-                    src={gym}
-                    width={200}
-                    height={200}
-                    alt="Picture of the author"
-                    className={styles.slider_image}
-
-                />
-            </div>
-            <div className={styles.gimage} onClick={() => openImage(bar)}>
-                <Image
-                    src={bar}
-                    width={200}
-                    height={200}
-                    alt="Picture of the author"
-                    className={styles.slider_image}
-
-                />
-            </div>
-            <div className={styles.gimage} onClick={() => openImage(CONF_ROOMS)}>
-                <Image
-                    src={CONF_ROOMS}
-                    width={200}
-                    height={200}
-                    alt="Picture of the author"
-                    className={styles.slider_image}
-
-                />
-            </div>
             <div className={styles.gimage} onClick={() => openImage(SWIMPOOLS)}>
                 <Image
                     src={SWIMPOOLS}
+                    width={200}
+                    height={200}
+                    alt="Picture of the author"
+                    className={styles.slider_image}
+
+                />
+            </div>
+            <div className={styles.gimage} onClick={() => openImage(gym)}>
+                <Image
+                    src={gym}
                     width={200}
                     height={200}
                     alt="Picture of the author"
@@ -64,6 +44,30 @@ const All = () => {
 
                 />
             </div>
+            <div className={styles.gimage} onClick={() => openImage(CONF_ROOMS)}>
+                <Image
+                    src={CONF_ROOMS}
+                    width={200}
+                    height={200}
+                    alt="Picture of the author"
+                    className={styles.slider_image}
+
+                />
+            </div>
+
+
+
+            <div className={styles.gimage} onClick={() => openImage(bar)}>
+                <Image
+                    src={bar}
+                    width={200}
+                    height={200}
+                    alt="Picture of the author"
+                    className={styles.slider_image}
+
+                />
+            </div>
+
 
             {selectedImage && (
                 <div className={styles.lightbox}>
@@ -86,4 +90,4 @@ const All = () => {
     )
 };
 
-export default All;
+export default BATHROOM;
